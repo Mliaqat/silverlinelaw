@@ -1,9 +1,8 @@
-import React from 'react'
+import ContactUs from "@/section/Pages/ContactUsPage";
+import React from "react";
 
 function page() {
-  return (
-    <div>page</div>
-  )
+  return <ContactUs />;
 }
 
-export default page
+export default page;

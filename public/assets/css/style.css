@@ -11499,3 +11499,8 @@ h3.comment-title {
   border:2px solid var(--primary-color1)
 }
 
+
+.active{
+  color: var(--primary-color1) !important;
+  font-weight: 700 !important;
+}

@@ -1,12 +1,12 @@
-import Breadcrumb from '@/Component/Breadcrum'
-import React from 'react'
+import Breadcrumb from "@/Component/Breadcrumb";
+import React from "react";
 
 function AboutUsPage() {
   return (
-  <>
-    <Breadcrumb title="About Us" pageName="About Us" />
-  </>
-  )
+    <>
+      <Breadcrumb title="About Us" pageName="About Us" />
+    </>
+  );
 }
 
-export default AboutUsPage
+export default AboutUsPage;

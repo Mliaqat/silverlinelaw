@@ -3,7 +3,7 @@ import Link from "next/link";
 function Footer() {
   return (
     <>
-      <footer className="footer-section">
+      <footer className="footer-section mt-4">
         <div className="footer-top">
           <div className="container-xl container-lg-fluid container">
             <div className="row gy-5">
@@ -35,7 +35,7 @@ function Footer() {
                   </ul>
                   <div className="open-hour">
                     <h6>Open Hour</h6>
-                    <p>Monday To Saturday, 9.00 AM - 10.30 PM</p>
+                    <p>Sunday To Thursday, 9.00 AM - 10.30 PM</p>
                   </div>
                 </div>
               </div>

@@ -1,10 +1,12 @@
 "use client";
 import React, { useEffect, useReducer, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 /*---------Using reducer mange the active or inactive menu----------*/
 
 function Header() {
   const [showMobileMenu, setMobileMenu] = useState(false);
+  const pathname = usePathname();
 
   // Sticky Menu Area
   useEffect(() => {
@@ -46,7 +48,7 @@ function Header() {
           <div className="mobile-logo-area d-xl-none d-flex justify-content-between align-items-center">
             <div className="mobile-logo-wrap ">
               <Link href="/">
-              <h3 className="text-white">Silver Line Law</h3>
+                <h3 className="text-white">Silver Line Law</h3>
               </Link>
             </div>
             <div onClick={handleMobileMenu} className="menu-close-btn">
@@ -55,20 +57,39 @@ function Header() {
           </div>
           <ul className="menu-list">
             <li>
-              <Link href="/">Home</Link>
+              <Link href="/" className={`${pathname == "/" ? "active" : ""}`}>
+                Home
+              </Link>
             </li>
             <li>
-              <Link href="/about-us">About Us</Link>
+              <Link
+                href="/practice-area"
+                className={`${pathname == "/practice-area" ? "active" : ""}`}
+              >
+                Practice Area
+              </Link>
             </li>
-
             <li>
-              <Link href="/contact-us">Contact Us</Link>
+              <Link
+                href="/about-us"
+                className={`${pathname == "/about-us" ? "active" : ""}`}
+              >
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/contact-us"
+                className={`${pathname == "/contact-us" ? "active" : ""}`}
+              >
+                Contact Us
+              </Link>
             </li>
           </ul>
           {/* mobile-search-area */}
           <div className="d-xl-none d-block">
             <div className="eg-btn btn--primary btn--lg d-xl-none d-flex">
-              <Link href="/contact">
+              <Link href="/contact-us">
                 <i className="bi bi-dash-lg" />
                 Free Consultation
               </Link>
@@ -102,8 +123,8 @@ function Header() {
             <i className="bi bi-list text-white" />
           </div>
           <div className="eg-btn btn--primary2 capsule btn--lg d-xl-flex d-none">
-            <Link href="/contact">
-              Free Cosultasion &nbsp;
+            <Link href="/contact-us">
+              Free Consultation &nbsp;
               <svg
                 width={18}
                 height={15}
