@@ -3,7 +3,7 @@ import Link from "next/link";
 function Footer() {
   return (
     <>
-      <footer className="footer-section mt-4">
+      <footer className="footer-section">
         <div className="footer-top">
           <div className="container-xl container-lg-fluid container">
             <div className="row gy-5">
@@ -66,7 +66,7 @@ function Footer() {
               </div>
               <div className="col-lg-3 col-md-6 d-flex justify-content-lg-center">
                 <div className="footer-item">
-                  <h4>Contacts</h4>
+                  <h4>Contact</h4>
                   <ul className="contact-list">
                     <li>
                       <div className="icon">

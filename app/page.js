@@ -1,4 +1,5 @@
 import AboutUs from "@/section/AboutUs";
+import AttorneySection from "@/section/Attorneys";
 import HeroSection from "@/section/HeroSection";
 import Practice from "@/section/Practice";
 import Records from "@/section/Records";
@@ -14,6 +15,7 @@ export default function Home() {
       </div>
       <AboutUs />
       <Practice />
+      <AttorneySection />
     </>
   );
 }

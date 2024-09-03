@@ -6,7 +6,7 @@ function ContactUs() {
   return (
     <>
       <Breadcrumb title="Contact Us" pageName="Contact Us" />
-      <div className="mt-5">
+      <div className="">
         <Contact />
       </div>
     </>
