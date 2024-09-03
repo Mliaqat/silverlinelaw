@@ -1,4 +1,18 @@
+"use client";
+import { sendContactForm } from "lib/api";
+import { useForm, SubmitHandler } from "react-hook-form";
+
 function Contact() {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = async (data) => {
+    await sendContactForm(data);
+  };
+
   return (
     <>
       <div className="contact-section dark3-bg pt-120 pb-120">
@@ -23,47 +37,110 @@ function Contact() {
         <div className="container">
           <div className="row align-items-start gy-5">
             <div className="col-xl-7 col-lg-7">
-              <form className="contact-form contact-form3">
-                <div className="row">
-                  <div className="col-lg-6">
-                    <div className="form-inner dark-mode">
-                      <input type="text" placeholder="Enter your name" />
+              <form onSubmit={handleSubmit(onSubmit)}>
+                <div className="contact-form contact-form3">
+                  <div className="row">
+                    <div className="col-lg-6">
+                      <div className="form-inner dark-mode">
+                        <input
+                          type="text"
+                          placeholder="Enter your name"
+                          {...register("name", {
+                            required: "Name is Required!",
+                          })}
+                          aria-invalid={errors.mail ? "true" : "false"}
+                        />
+                        {errors.name && (
+                          <p role="alert" className="text-danger">
+                            {errors.name.message}
+                          </p>
+                        )}
+                      </div>
                     </div>
-                  </div>
 
-                  <div className="col-lg-6">
-                    <div className="form-inner dark-mode">
-                      <input type="email" placeholder="Subject" />
+                    <div className="col-lg-6">
+                      <div className="form-inner dark-mode">
+                        <input
+                          type="text"
+                          placeholder="Subject"
+                          {...register("subject", {
+                            required: "Subject is Required!",
+                          })}
+                          aria-invalid={errors.mail ? "true" : "false"}
+                        />
+                        {errors.subject && (
+                          <p role="alert" className="text-danger">
+                            {errors.subject.message}
+                          </p>
+                        )}
+                      </div>
                     </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="form-inner dark-mode">
-                      <input type="email" placeholder="Enter your email" />
+                    <div className="col-lg-6">
+                      <div className="form-inner dark-mode">
+                        <input
+                          type="email"
+                          placeholder="Enter your email"
+                          {...register("email", {
+                            required: "Email is required",
+                            pattern: {
+                              value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                              message: "Invalid email address",
+                            },
+                          })}
+                          aria-invalid={errors.email ? "true" : "false"}
+                        />
+                        {errors.email && (
+                          <p role="alert" className="text-danger">
+                            {errors.email.message}
+                          </p>
+                        )}
+                      </div>
                     </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="form-inner dark-mode">
-                      <input type="text" placeholder="Enter your Phone" />
+                    <div className="col-lg-6">
+                      <div className="form-inner dark-mode">
+                        <input
+                          type="text"
+                          placeholder="Enter your Phone"
+                          {...register("phone", {
+                            required: "Phone Number is Required!",
+                          })}
+                          aria-invalid={errors.mail ? "true" : "false"}
+                        />
+                        {errors.phone && (
+                          <p role="alert" className="text-danger">
+                            {errors.phone.message}
+                          </p>
+                        )}
+                      </div>
                     </div>
-                  </div>
-                  <div className="col-lg-12">
-                    <div className="form-inner dark-mode">
-                      <textarea
-                        rows={5}
-                        placeholder="Your message"
-                        defaultValue={""}
-                      />
+                    <div className="col-lg-12">
+                      <div className="form-inner dark-mode">
+                        <textarea
+                          rows={5}
+                          placeholder="Your message"
+                          {...register("message", {
+                            required: "Message is Required!",
+                          })}
+                          defaultValue={""}
+                          aria-invalid={errors.mail ? "true" : "false"}
+                        />
+                        {errors.message && (
+                          <p role="alert" className="text-danger">
+                            {errors.message.message}
+                          </p>
+                        )}
+                      </div>
                     </div>
-                  </div>
-                  <div className="col-lg-12 text-lg-start text-center">
-                    <button
-                      type="submit"
-                      className="eg-btn btn--primary2 sibling2  btn--lg2"
-                    >
-                      <i className="bi bi-dash-lg" />
-                      Contact Now
-                      <i className="bi bi-chevron-right" />
-                    </button>
+                    <div className="col-lg-12 text-lg-start text-center">
+                      <button
+                        type="submit"
+                        className="eg-btn btn--primary2 sibling2  btn--lg2"
+                      >
+                        <i className="bi bi-dash-lg" />
+                        Contact Now
+                        <i className="bi bi-chevron-right" />
+                      </button>
+                    </div>
                   </div>
                 </div>
               </form>
