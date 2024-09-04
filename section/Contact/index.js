@@ -1,20 +1,51 @@
 "use client";
 import { sendContactForm } from "lib/api";
-import { useForm, SubmitHandler } from "react-hook-form";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 function Contact() {
+  const [loading, setLoading] = useState(false);
+
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm();
   const onSubmit = async (data) => {
-    await sendContactForm(data);
+    try {
+      setLoading(true);
+      await sendContactForm(data);
+      toast.success("Message Send Successfully!", {
+        position: "top-center",
+        autoClose: 2500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+      setLoading(false);
+    } catch (error) {
+      setLoading(false);
+      toast.error("Something Went Wrong!", {
+        position: "top-center",
+        autoClose: 2500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+    }
   };
 
   return (
     <>
+      <ToastContainer />
       <div className="contact-section dark3-bg pt-120 pb-120">
         <div className="container-fluid">
           <div className="row">
@@ -137,7 +168,7 @@ function Contact() {
                         className="eg-btn btn--primary2 sibling2  btn--lg2"
                       >
                         <i className="bi bi-dash-lg" />
-                        Contact Now
+                        {loading ? "Loading..." : "Contact Now"}
                         <i className="bi bi-chevron-right" />
                       </button>
                     </div>
