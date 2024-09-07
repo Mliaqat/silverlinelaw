@@ -2,6 +2,7 @@
 import React, { useEffect, useReducer, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 /*---------Using reducer mange the active or inactive menu----------*/
 
 function Header() {
@@ -38,6 +39,7 @@ function Header() {
     <>
       <header className="header-area style-2">
         <div className="header-logo">
+        
           <Link href="/">
             <h3 className="text-white">Silver Line Law</h3>
           </Link>
