@@ -30,7 +30,7 @@ function HeroSection() {
               <div className="banner-content">
                 <span>Welcome to Silver Line Law</span>
                 <h1>
-                  We Are Specialized In All <span>Type Law..</span>
+                  We Are Specialized In All <span>Types Law..</span>
                 </h1>
                 <div className="button-area">
                   <Link
