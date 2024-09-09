@@ -1703,7 +1703,7 @@ header.style-2.sticky {
 
 @media (min-width: 1200px) and (max-width: 1399px) {
   header.style-2 .header-logo {
-    padding: 21px 0px;
+    padding: 0px 0px;
   }
 }
 
