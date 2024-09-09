@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /*
 Template Name: Corelaw- Law firm, Lawyers & Legal Service HTML Template
 */
@@ -840,7 +839,7 @@ i.bx {
 }
 
 @media (max-width: 767px) {
-  .marquee span { 
+  .marquee span {
     font-size: 2rem;
   }
 }
@@ -1629,12 +1628,6 @@ li a.active-menu {
   color: var(--primary-color1) !important;
 }
 
-
-
-
-
-
-
 .mobile-menu-btn i {
   font-size: 22px;
   color: #fff;
@@ -2024,7 +2017,6 @@ header.style-2 .main-nav ul li.menu-item-has-children > i {
     margin-bottom: -1px;
   }
 }
-
 
 /*=======================================
    11. Banner-section
@@ -3593,16 +3585,36 @@ header.style-2 .main-nav ul li.menu-item-has-children > i {
   border-radius: 240px;
   width: 100%;
   max-width: 490px;
-  height: 100%;
+  height: 590px;
 }
 
 .about1-img img {
   border-radius: 240px;
+  max-width: 490px;
 }
 
 @media (max-width: 991px) {
   .about1-img {
     margin-top: 70px;
+  }
+}
+
+@media (max-width: 520px) {
+  .about1-img::before {
+    max-width: 390px;
+    height: 450px;
+  }
+  .about1-img img {
+    max-width: 390px;
+  }
+}
+@media (max-width: 440px) {
+  .about1-img::before {
+    max-width: 290px;
+    height: 330px;
+  }
+  .about1-img img {
+    max-width: 290px;
   }
 }
 
@@ -3628,14 +3640,16 @@ header.style-2 .main-nav ul li.menu-item-has-children > i {
   -ms-flex-pack: center;
   justify-content: center;
   position: absolute;
-  top: -25px;
-  right: -25px;
+  top: 0px;
+  right: -50px;
 }
 
-@media (max-width: 576px) {
+
+@media (max-width: 550px) {
   .experience-tag {
-    top: 185px;
-    right: 10px;
+    margin-top: -8rem;
+    margin-left: 1rem;
+   position: relative;
   }
 }
 
@@ -9870,7 +9884,7 @@ h3.comment-title {
 }
 /*# sourceMappingURL=style.css.map */
 
-.banner-social-area ul li{
+.banner-social-area ul li {
   background-color: var(--primary-color1) !important;
   border-radius: 50px !important;
   width: 2.5rem !important;
@@ -9880,23 +9894,29 @@ h3.comment-title {
   align-items: center;
 }
 
-.banner-social-area ul li:hover{
+.banner-social-area ul li:hover {
   background-color: white !important;
-  border:2px solid var(--primary-color1)
+  border: 2px solid var(--primary-color1);
 }
 
-
-.active{
+.active {
   color: var(--primary-color1) !important;
   font-weight: 700 !important;
 }
 
+.header-logo {
+  display: flex;
+}
 
-.logo{
+.logo-align {
   position: relative;
-  width: 12rem;
-  height: 12rem;
+}
+
+.logo {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   background-color: var(--primary-color1);
-  padding: 1rem;
-  border-radius: 50px;
+  padding-top: 0.17rem;
+  padding-bottom: 0.17rem;
+  border-radius: 100%;
 }

@@ -39,9 +39,16 @@ function Header() {
     <>
       <header className="header-area style-2">
         <div className="header-logo">
+          <Link href="/" className="logo-align">
+            <div className="logo">
+              <Image
+                src="/assets/logo.png"
+                alt="logo"
+                width={100}
+                height={100}
+              />
+            </div>
         
-          <Link href="/">
-            <h3 className="text-white">Silver Line Law</h3>
           </Link>
         </div>
         <div

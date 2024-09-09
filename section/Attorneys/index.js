@@ -13,13 +13,13 @@ SwiperCore.use([Navigation, Pagination, Autoplay, Navigation, EffectFade]);
 const AttorneysData = [
   {
     id: 1,
-    images: "assets/images/bg/attorney1.png",
+    images: "assets/ahmed.png",
     name: "Dr. Ahmed Abdulla Didi",
     designation: "Family Lawyer",
   },
   {
     id: 2,
-    images: "assets/images/bg/attorney2.png",
+    images: "assets/Uz.png",
     name: "Uz. Ahmed Maajid",
     designation: "Family Lawyer",
   },

@@ -54,11 +54,7 @@ function AboutUs() {
                 data-wow-duration="1.5s"
                 data-wow-delay="0.2s"
               >
-                <img
-                  src="assets/images/bg/about1-bg.png"
-                  alt="image"
-                  className="img-fluid"
-                />
+                <img src="assets/ahmed.png" alt="image" />
                 <div className="experience-tag">
                   <h2>
                     05 <span>Years</span>

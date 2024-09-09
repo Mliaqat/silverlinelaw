@@ -202,7 +202,14 @@ function Footer() {
             <div className="row d-flex align-items-center g-3">
               <div className="col-lg-6 d-flex justify-content-lg-start justify-content-center text-lg-start text-center px-1">
                 <p>
-                  Copyright 2024{" "}
+                  <a
+                    className="text-transparent"
+                    href="https://www.linkedin.com/in/liaqatshehzad/"
+                    target="_blank"
+                  >
+                    Copyright {new Date().getFullYear()}
+                  </a>
+                  {" "}
                   <Link href="#" className="egns-lab">
                     Silver Line Law
                   </Link>
