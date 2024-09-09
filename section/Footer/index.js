@@ -10,7 +10,7 @@ function Footer() {
               <div className="col-lg-3 col-md-6">
                 <div className="footer-about footer-item">
                   <Link href="/">
-                    <h4>Silver Line Law</h4>
+                    <h4>Silverline Law Associates</h4>
                   </Link>
                   <p>
                     Integer purus odio, placerat nec andi rhoncus in,
