@@ -1719,11 +1719,6 @@ header.style-2.sticky {
   }
 }
 
-header.style-2 .header-logo img {
-  min-width: 120px;
-  max-width: 100%;
-}
-
 @media only screen and (min-width: 1000px) {
   header.style-2 .main-nav ul li:hover ul.sub-menu {
     display: block !important;
@@ -3644,12 +3639,11 @@ header.style-2 .main-nav ul li.menu-item-has-children > i {
   right: -50px;
 }
 
-
 @media (max-width: 550px) {
   .experience-tag {
     margin-top: -8rem;
     margin-left: 1rem;
-   position: relative;
+    position: relative;
   }
 }
 
@@ -9906,17 +9900,19 @@ h3.comment-title {
 
 .header-logo {
   display: flex;
+  align-items: center;
+  column-gap: 1rem;
 }
 
+
+
 .logo-align {
-  position: relative;
+  position: flex;
 }
 
 .logo {
   margin-top: 1rem;
   margin-bottom: 1rem;
   background-color: var(--primary-color1);
-  padding-top: 0.17rem;
-  padding-bottom: 0.17rem;
   border-radius: 100%;
 }

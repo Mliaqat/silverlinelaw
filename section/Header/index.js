@@ -41,15 +41,10 @@ function Header() {
         <div className="header-logo">
           <Link href="/" className="logo-align">
             <div className="logo">
-              <Image
-                src="/assets/logo.png"
-                alt="logo"
-                width={100}
-                height={100}
-              />
+              <Image src="/assets/logo.png" alt="logo" width={50} height={50} />
             </div>
-        
           </Link>
+          <h5 className="text-white">Silver Line Law</h5>
         </div>
         <div
           className={showMobileMenu === 1 ? "main-nav show-menu" : "main-nav"}

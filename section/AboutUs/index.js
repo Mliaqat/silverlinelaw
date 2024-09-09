@@ -57,7 +57,7 @@ function AboutUs() {
                 <img src="assets/ahmed.png" alt="image" />
                 <div className="experience-tag">
                   <h2>
-                    05 <span>Years</span>
+                    25 <span>Years</span>
                   </h2>
                   <p>We Have A Lot Of Real Experience</p>
                 </div>
