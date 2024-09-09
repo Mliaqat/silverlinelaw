@@ -90,15 +90,8 @@ function Header() {
               </Link>
             </li>
           </ul>
-          {/* mobile-search-area */}
-          <div className="d-xl-none d-block">
-            <div className="eg-btn btn--primary btn--lg d-xl-none d-flex">
-              <Link href="/contact-us">
-                <i className="bi bi-dash-lg" />
-                Free Consultation
-              </Link>
-            </div>
-          </div>
+        
+       
           <div className="phone-call d-flex justify-content-start align-items-center flex-row d-xl-none d-block mt-5">
             <div className="icon">
               <svg
