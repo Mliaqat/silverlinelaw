@@ -2111,10 +2111,17 @@ header.style-2 .main-nav ul li.menu-item-has-children > i {
   line-height: 1.3;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1380px) {
   .banner-section .banner-content h1 {
     line-height: 1.2;
     font-size: 4rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .banner-section .banner-content h1 {
+    line-height: 1.2;
+    font-size: 3.5rem;
   }
 }
 
