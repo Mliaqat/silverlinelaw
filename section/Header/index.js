@@ -44,7 +44,7 @@ function Header() {
               <Image src="/assets/logo.png" alt="logo" width={50} height={50} />
             </div>
           </Link>
-          <h5 className="text-white">Silver Line Law</h5>
+          <h5 className="text-white">Silverline Law Associates </h5>
         </div>
         <div
           className={showMobileMenu === 1 ? "main-nav show-menu" : "main-nav"}
