@@ -67,10 +67,10 @@ function AttorneySection() {
         navigation: false,
       },
       992: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
       1200: {
-        slidesPerView: 4,
+        slidesPerView: 2,
       },
     },
   };
@@ -91,21 +91,21 @@ function AttorneySection() {
             </div>
           </div>
           <div className="row">
-            <div className="col-12">
-              <Swiper
+            <div className="w-md-75 w-lg-50 m-auto">
+              {/* <Swiper
                 {...arrtornySlider}
                 className="swiper attorney-slider pb-65"
-              >
-                <div className="swiper-wrapper">
-                  {AttorneysData.slice(0, 4).map((item) => {
+              > */}
+                <div className="w-md-75 w-75 row justify-content-center g-4 m-auto">
+                  {AttorneysData.slice(0, 2).map((item) => {
                     return (
-                      <SwiperSlide
-                        key={item.id}
-                        className="swiper-slide wow fadeInDown"
-                        data-wow-duration="1.5s"
-                        data-wow-delay="0.2s"
-                      >
-                        <div className="attorney-single">
+                      // <SwiperSlide
+                      //   key={item.id}
+                      //   className="swiper-slide wow fadeInDown"
+                      //   data-wow-duration="1.5s"
+                      //   data-wow-delay="0.2s"
+                      // >
+                        <div className="attorney-single  col-lg-4 col-md-6 col-sm-10">
                           <img
                             src={item.images}
                             className="casestudy1"
@@ -132,12 +132,12 @@ function AttorneySection() {
                             </ul>
                           </div>
                         </div>
-                      </SwiperSlide>
+                      // </SwiperSlide>
                     );
                   })}
                 </div>
                 <div className="swiper-pagination d-flex align-items-center justify-content-center" />
-              </Swiper>
+              {/* </Swiper> */}
             </div>
           </div>
         </div>
