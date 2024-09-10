@@ -201,55 +201,6 @@ function PracticeDetails() {
           </div>
         </div>
       </div>
-      <div className="team-section pb-120">
-        <div className="container">
-          <h3 className="team-title">This Team</h3>
-          <div className="row justify-content-center g-4">
-            {teamData.slice(0, 4).map((item) => {
-              return (
-                <div
-                  key={item.id}
-                  className="col-xl-3 col-lg-4 col-md-6 col-sm-10  wow fadeInDown"
-                  data-wow-duration="1.5s"
-                  data-wow-delay="0.2s"
-                >
-                  <div className="attorney-single sibling2">
-                    <img src={item.image} className="casestudy1" alt="image" />
-                    <div className="content">
-                      <h4>
-                        <Link href="/lawyer-details">{item.name}</Link>
-                      </h4>
-                      <p>{item.designation}</p>
-                    </div>
-                    <ul className="social-list2 gap-3">
-                      <li>
-                        <a href="https://www.facebook.com/">
-                          <i className="bx bxl-facebook" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.twitter.com/">
-                          <i className="bx bxl-twitter" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com/">
-                          <i className="bx bxl-instagram" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.pinterest.com/">
-                          <i className="bx bxl-pinterest" />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </div>
     </>
   );
 }

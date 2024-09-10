@@ -44,19 +44,19 @@ function Header() {
               <Image src="/assets/logo.png" alt="logo" width={50} height={50} />
             </div>
           </Link>
-          <h5 className="text-white">Silverline Law Associates </h5>
+          <p>Silverline Law Associates </p>
         </div>
         <div
           className={showMobileMenu === 1 ? "main-nav show-menu" : "main-nav"}
         >
-          <div className="mobile-logo-area d-xl-none d-flex justify-content-between align-items-center">
+          <div className="mobile-logo-area d-xl-none d-flex justify-content-between">
             <div className="mobile-logo-wrap ">
               <Link href="/">
-                <h3 className="text-white">Silver Line Law</h3>
+                <p>Silverline Law Associates</p>
               </Link>
             </div>
             <div onClick={handleMobileMenu} className="menu-close-btn">
-              <i className="bi bi-x-lg text-white" />
+              <i className="bi bi-x-lg" />
             </div>
           </div>
           <ul className="menu-list">
@@ -117,7 +117,7 @@ function Header() {
             style={{ cursor: "pointer" }}
             onClick={handleMobileMenu}
           >
-            <i className="bi bi-list text-white" />
+            <i className="bi bi-list" />
           </div>
       
         </div>

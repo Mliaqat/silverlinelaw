@@ -7,7 +7,7 @@ function Footer() {
         <div className="footer-top">
           <div className="container-xl container-lg-fluid container">
             <div className="row gy-5">
-              <div className="col-lg-3 col-md-6">
+              <div className="col-lg-6 col-md-6">
                 <div className="footer-about footer-item">
                   <Link href="/">
                     <h4>Silverline Law Associates</h4>
@@ -39,32 +39,8 @@ function Footer() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6 d-flex justify-content-lg-center">
-                <div className="footer-item">
-                  <h4>Practice Area</h4>
-                  <ul className="link-list">
-                    <li>
-                      <Link href="/practice-details">Business Law</Link>
-                    </li>
-                    <li>
-                      <Link href="/practice-details">Work Accident</Link>
-                    </li>
-                    <li>
-                      <Link href="/practice-details">Criminal Law</Link>
-                    </li>
-                    <li>
-                      <Link href="/practice-details">Real State Law</Link>
-                    </li>
-                    <li>
-                      <Link href="/practice-details">Drug Offense</Link>
-                    </li>
-                    <li>
-                      <Link href="/practice-details">Juvenile Crime</Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-6 d-flex justify-content-lg-center">
+
+              <div className="col-lg-6 col-md-6 d-flex justify-content-lg-center">
                 <div className="footer-item">
                   <h4>Contact</h4>
                   <ul className="contact-list">
@@ -145,55 +121,6 @@ function Footer() {
                   </ul>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6 d-flex justify-content-lg-end">
-                <div className="footer-item">
-                  <h4>Recent Case</h4>
-                  <ul className="recent-caselist">
-                    <li>
-                      <div className="image">
-                        <img
-                          src="assets/images/blog/recent-case1.png"
-                          alt="image"
-                        />
-                      </div>
-                      <div className="text">
-                        <span>skirmish</span>
-                        <h5>
-                          <Link href="/casestudy-details">Education Law</Link>
-                        </h5>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="image">
-                        <img
-                          src="assets/images/blog/recent-case2.png"
-                          alt="image"
-                        />
-                      </div>
-                      <div className="text">
-                        <span>skirmish</span>
-                        <h5>
-                          <Link href="/casestudy-details">Personal injury</Link>
-                        </h5>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="image">
-                        <img
-                          src="assets/images/blog/recent-case3.png"
-                          alt="image"
-                        />
-                      </div>
-                      <div className="text">
-                        <span>skirmish</span>
-                        <h5>
-                          <Link href="/casestudy-details">Drug Offense</Link>
-                        </h5>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -208,8 +135,7 @@ function Footer() {
                     target="_blank"
                   >
                     Copyright {new Date().getFullYear()}
-                  </a>
-                  {" "}
+                  </a>{" "}
                   <Link href="#" className="egns-lab">
                     Silver Line Law
                   </Link>

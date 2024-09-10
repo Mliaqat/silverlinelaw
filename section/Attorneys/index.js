@@ -23,18 +23,18 @@ const AttorneysData = [
     name: "Uz. Ahmed Maajid",
     designation: "Family Lawyer",
   },
-  {
-    id: 3,
-    images: "assets/images/bg/attorney3.png",
-    name: "Anthony Dylan",
-    designation: "Criminal Lawyer",
-  },
-  {
-    id: 4,
-    images: "assets/images/bg/attorney4.png",
-    name: "Ezra Gabriel",
-    designation: "Drug Offense Lawyer",
-  },
+  // {
+  //   id: 3,
+  //   images: "assets/images/bg/attorney3.png",
+  //   name: "Anthony Dylan",
+  //   designation: "Criminal Lawyer",
+  // },
+  // {
+  //   id: 4,
+  //   images: "assets/images/bg/attorney4.png",
+  //   name: "Ezra Gabriel",
+  //   designation: "Drug Offense Lawyer",
+  // },
 ];
 
 function AttorneySection() {
@@ -118,23 +118,15 @@ function AttorneySection() {
                             <p>{item.designation}</p>
                             <ul className="social-list gap-3">
                               <li>
-                                <a href="https://www.facebook.com/">
-                                  <i className="bx bxl-facebook" />
-                                </a>
-                              </li>
-                              <li>
                                 <a href="https://www.twitter.com/">
                                   <i className="bx bxl-twitter" />
                                 </a>
                               </li>
                               <li>
                                 <a href="https://www.instagram.com/">
-                                  <i className="bx bxl-instagram" />
-                                </a>
-                              </li>
-                              <li>
-                                <a href="https://www.pinterest.com/">
-                                  <i className="bx bxl-pinterest" />
+                                  <i
+                                    className="bi bi-linkedin"
+                                  />
                                 </a>
                               </li>
                             </ul>

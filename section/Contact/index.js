@@ -3,7 +3,7 @@ import { sendContactForm } from "lib/api";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast, ToastContainer } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 
 function Contact() {
   const [loading, setLoading] = useState(false);
@@ -12,6 +12,7 @@ function Contact() {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
   const onSubmit = async (data) => {
     try {
@@ -27,6 +28,7 @@ function Contact() {
         progress: undefined,
         theme: "dark",
       });
+      reset();
       setLoading(false);
     } catch (error) {
       setLoading(false);
@@ -46,7 +48,7 @@ function Contact() {
   return (
     <>
       <ToastContainer />
-      <div className="contact-section dark3-bg pt-120 pb-120">
+      <div className="contact-section  pt-120 pb-120">
         <div className="container-fluid">
           <div className="row">
             <div className="section-title-area">
@@ -58,7 +60,7 @@ function Contact() {
               </div>
               <div className="section-title">
                 <span>CONTACT US</span>
-                <h2 className="text-white">
+                <h2>
                   Let us know your concern We Are Always Ready.
                 </h2>
               </div>

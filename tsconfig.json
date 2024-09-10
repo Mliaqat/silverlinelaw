@@ -17,7 +17,8 @@
       "@/Component/*": ["Component/*"],
       "@/utils/*": ["utils/*"],
       "@/styles/*": ["styles/*"],
-      "@/section/*": ["section/*"]
+      "@/section/*": ["section/*"],
+      "@/config/*": ["config/*"]
     },
     "plugins": [
       {
@@ -25,6 +26,14 @@
       }
     ]
   },
-  "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx", "app/api/contact/route.js", "lib/api.js"],
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.js",
+    "**/*.tsx",
+    "app/api/contact/route.js",
+    "lib/api.js"
+  ],
   "exclude": ["node_modules"]
 }
