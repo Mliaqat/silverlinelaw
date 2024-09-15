@@ -43,7 +43,6 @@ function AboutUs() {
                     Classei consequat tincidunt turpis sit amet imperdiet for
                     mind.
                   </p>
-                  <img src="assets/images/icons/lawyer-sign.svg" alt="image" />
                   <h6>Dr. Ahmed Abdullah Didi, CEO-Founder</h6>
                 </div>
               </div>
@@ -54,13 +53,13 @@ function AboutUs() {
                 data-wow-duration="1.5s"
                 data-wow-delay="0.2s"
               >
-                <img src="assets/ahmed.png" alt="image" />
-                <div className="experience-tag">
+                <img src="assets/protifilo.jpg" alt="image" />
+                {/* <div className="experience-tag">
                   <h2>
                     25 <span>Years</span>
                   </h2>
                   <p>We Have A Lot Of Real Experience</p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

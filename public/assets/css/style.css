@@ -3469,14 +3469,21 @@ header.style-2 .main-nav ul li i {
   border-radius: 240px;
   width: 100%;
   max-width: 490px;
-  height: 590px;
+  height: 430px;
 }
 
 .about1-img img {
-  border-radius: 240px;
-  max-width: 490px;
+  border-radius: 100% !important;
+  max-width: 380px;
+  height: 370px;
 }
 
+@media (max-width: 1100px) {
+  .about1-img img{
+    max-width: 370px;
+    height: 370px;
+  }
+}
 @media (max-width: 991px) {
   .about1-img {
     margin-top: 70px;
