@@ -4,9 +4,9 @@ import CountUp from "react-countup";
 function Records() {
   return (
     <>
-      <div className="counter-section2">
+      <div className="counter-section2 d-none d-lg-block">
         <div className="container">
-          <div className="row justify-content-center gx-lg-0 g-4">
+          <div className="row justify-content-center gx-lg-0 g-4 ">
             <div className="col-lg-3 col-md-4 col-sm-6">
               <div
                 className="intro-single sibling2 border-top-left-bottom wow animate fadeInUp"

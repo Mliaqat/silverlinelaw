@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <div className="position-relative">
         <HeroSection />
-        <div className="mt-3">
+        <div className="mt-3 hidden md:block">
           <Records />
         </div>
       </div>
