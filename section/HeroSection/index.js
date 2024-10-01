@@ -5,32 +5,14 @@ function HeroSection() {
   return (
     <>
       <div className="banner-section">
-        <div className="banner-social-area">
-          <ul className="banner-social gap-4">
-            <li>
-              <a href="https://www.facebook.com/">
-                <i className="bx bxl-facebook" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.twitter.com/">
-                <i className="bx bxl-twitter" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/">
-                <i className="bx bxl-instagram" />
-              </a>
-            </li>
-          </ul>
-        </div>
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-10">
               <div className="banner-content">
                 <span>Welcome to Silver Line Law</span>
                 <h1>
-                  We Are Specialized In All <span>Types of Law..</span>
+                  We Are Specialized In All <br></br>
+                  <span>Types of Law..</span>
                 </h1>
                 <div className="button-area">
                   <Link

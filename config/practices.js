@@ -3,7 +3,7 @@ export const PracticesData = [
     id: 1,
     name: "Commercial Law",
     description:
-      "In today’s increasingly regulated markets, it is more crucial than ever to establish commercial agreements that maximize the benefits of your partnerships while safeguarding against potential risks. The success of your business relies heavily on the strength and reliability of your relationships with third parties, including customers, suppliers, and intermediaries.To effectively manage risk and protect economic interests, your contracts must be tailored to the specific sectors and markets in which you operate and accurately reflect the positions of all parties involved.At Alif Law Chambers, we don’t differentiate between legal points and commercial points. If an issue arises that pertains to the deal at hand, we thoroughly investigate it and help our clients find solutions.Whether you need guidance on supply agreements, service contracts, manufacturing agreements, consumer agreements, or any other customized commercial arrangement, Alif Law Chambers is here to support you in achieving your objectives.You can rely on us for clear, straightforward advice—whether it's for a one-time deal, questions arising from your business negotiations, or handling complex, time-sensitive negotiations from start to finish.Our contractual solutions are designed to meet the unique needs of your transactions and organization. We approach new projects with an open mind, focusing on a pragmatic, flexible approach grounded in our deep contracting expertise, rather than adhering to a  methodology.",
+      "In today’s increasingly regulated markets, it is more crucial than ever to establish commercial agreements that maximize the benefits of your partnerships while safeguarding against potential risks. The success of your business relies heavily on the strength and reliability of your relationships with third parties, including customers, suppliers, and intermediaries.To effectively manage risk and protect economic interests, your contracts must be tailored to the specific sectors and markets in which you operate and accurately reflect the positions of all parties involved.At Sliverlaw Chambers, we don’t differentiate between legal points and commercial points. If an issue arises that pertains to the deal at hand, we thoroughly investigate it and help our clients find solutions.Whether you need guidance on supply agreements, service contracts, manufacturing agreements, consumer agreements, or any other customized commercial arrangement, Sliverlaw Chambers is here to support you in achieving your objectives.You can rely on us for clear, straightforward advice—whether it's for a one-time deal, questions arising from your business negotiations, or handling complex, time-sensitive negotiations from start to finish.Our contractual solutions are designed to meet the unique needs of your transactions and organization. We approach new projects with an open mind, focusing on a pragmatic, flexible approach grounded in our deep contracting expertise, rather than adhering to a  methodology.",
     icons: "commercial",
   },
   {
@@ -21,7 +21,7 @@ export const PracticesData = [
   {
     name: "Real Estate and Construction",
     description:
-      "We provide strong, established local knowledge and know-how at Alif Law Chambers to help you thrive in all of your real estate endeavors and projects.",
+      "We provide strong, established local knowledge and know-how at Sliverlaw Chambers to help you thrive in all of your real estate endeavors and projects.",
     icons: "realState",
   },
   {
@@ -46,7 +46,7 @@ export const PracticesData = [
   {
     name: "Arbitration",
     description:
-      "Our goal at Alif Law Chambers is to resolve conflicts in the most cost-effective and efficient manner feasible for our clients. We have a proven",
+      "Our goal at Sliverlaw Chambers is to resolve conflicts in the most cost-effective and efficient manner feasible for our clients. We have a proven",
     icons: "commercial",
   },
   {
@@ -58,13 +58,13 @@ export const PracticesData = [
   {
     name: "Hospitality",
     description:
-      "Our clients can rely on Alif Law Chamber’s extensive expertise in the Maldives’ Hospitality industry to strategically manage today’s opportunities and challenges, based on our",
+      "Our clients can rely on Sliverlaw Chamber’s extensive expertise in the Maldives’ Hospitality industry to strategically manage today’s opportunities and challenges, based on our",
     icons: "commercial",
   },
   {
     name: "Trade",
     description:
-      "Trade law is a multifaceted, political, and frequently changing environment that, if not carefully managed, can offer considerable hurdles to international enterprise. Alif Law Chambers’",
+      "Trade law is a multifaceted, political, and frequently changing environment that, if not carefully managed, can offer considerable hurdles to international enterprise. Sliverlaw Chambers’",
     icons: "commercial",
   },
   {
@@ -100,13 +100,13 @@ export const PracticesData = [
   {
     name: "Notarization Services",
     description:
-      "Many commercial transactions require the use of a notary public, who validates specific types of transactional or legal documents. Notary publics at Alif Law Chambers",
+      "Many commercial transactions require the use of a notary public, who validates specific types of transactional or legal documents. Notary publics at Sliverlaw Chambers",
     icons: "commercial",
   },
   {
     name: "Pro Bono",
     description:
-      "At Alif Law Chambers, we believe in the importance of public service. Hence, we are committed and strive to bring the best possible legal representation",
+      "At Sliverlaw Chambers, we believe in the importance of public service. Hence, we are committed and strive to bring the best possible legal representation",
     icons: "commercial",
   },
   {

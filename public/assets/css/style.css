@@ -1074,10 +1074,10 @@ i.bx {
 }
 
 .btn--lg {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 600;
   text-transform: capitalize;
-  padding: 15px 35px;
+  padding: 10px 25px;
 }
 
 @media (max-width: 767px) {
@@ -1906,7 +1906,7 @@ header.style-2 .main-nav ul li i {
 
 .banner-section {
   overflow: hidden;
-  height: 90vh;
+  height: 60vh;
   position: relative;
   z-index: 1;
   display: -webkit-box;
@@ -1986,7 +1986,7 @@ header.style-2 .main-nav ul li i {
 }
 
 .banner-section .banner-content h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 600;
   color: var(--white);
   margin-bottom: 45px;
@@ -1996,20 +1996,20 @@ header.style-2 .main-nav ul li i {
 @media (max-width: 1380px) {
   .banner-section .banner-content h1 {
     line-height: 1.2;
-    font-size: 4rem;
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 991px) {
   .banner-section .banner-content h1 {
     line-height: 1.2;
-    font-size: 3.5rem;
+    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 576px) {
   .banner-section .banner-content h1 {
-    font-size: 3.2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -2053,7 +2053,7 @@ header.style-2 .main-nav ul li i {
 
 .phone-call .number h5 {
   color: var(--white);
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 700;
   margin-bottom: 0px;
   white-space: nowrap;
@@ -3179,7 +3179,7 @@ header.style-2 .main-nav ul li i {
 
 .intro-single.sibling2 {
   background: var(--dark2);
-  padding: 40px 25px;
+  padding: 8px 25px;
   position: relative;
 }
 
@@ -3231,10 +3231,10 @@ header.style-2 .main-nav ul li i {
 }
 
 .intro-single.sibling2 .intro-wrap img {
-  max-width: 70px;
+  max-width: 55px;
   height: auto;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 767px) {
@@ -3479,7 +3479,7 @@ header.style-2 .main-nav ul li i {
 }
 
 @media (max-width: 1100px) {
-  .about1-img img{
+  .about1-img img {
     max-width: 370px;
     height: 370px;
   }
@@ -5272,7 +5272,7 @@ header.style-2 .main-nav ul li i {
   border-radius: 5px 5px 0px 0px;
 }
 
-.attorney-single .content .social-list li a .bx{
+.attorney-single .content .social-list li a .bx {
   width: 22px;
   height: 22px;
   line-height: 22px;
@@ -5285,7 +5285,7 @@ header.style-2 .main-nav ul li i {
   transition: all 0.35s ease;
 }
 
-.attorney-single .content .social-list li:hover a .bx{
+.attorney-single .content .social-list li:hover a .bx {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
@@ -5884,7 +5884,6 @@ select .option.focus,
   background-color: #fff !important;
   color: #000 !important;
 }
-
 
 .contact-form .form-inner input::-webkit-input-placeholder,
 .contact-form .form-inner textarea::-webkit-input-placeholder,

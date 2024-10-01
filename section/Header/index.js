@@ -90,8 +90,7 @@ function Header() {
               </Link>
             </li>
           </ul>
-        
-       
+
           <div className="phone-call d-flex justify-content-start align-items-center flex-row d-xl-none d-block mt-5">
             <div className="icon">
               <svg
@@ -110,16 +109,16 @@ function Header() {
               <h5>+960 3005653</h5>
             </div>
           </div>
-        </div>
-        <div className="nav-right d-flex jsutify-content-end align-items-center gap-5">
-          <div
-            className="mobile-menu-btn d-xl-none d-block"
-            style={{ cursor: "pointer" }}
-            onClick={handleMobileMenu}
-          >
-            <i className="bi bi-list" />
+
+          <div className="nav-right d-flex jsutify-content-end align-items-center gap-5">
+            <div
+              className="mobile-menu-btn d-xl-none d-block"
+              style={{ cursor: "pointer" }}
+              onClick={handleMobileMenu}
+            >
+              <i className="bi bi-list" />
+            </div>
           </div>
-      
         </div>
       </header>
     </>

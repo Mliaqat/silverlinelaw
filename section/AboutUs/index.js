@@ -3,7 +3,7 @@ import React from "react";
 function AboutUs() {
   return (
     <>
-      <div className="about-section pt-3 pt-lg-120 pb-120" id="about">
+      <div className="about-section pt-3 pt-lg-120 pb-11" id="about">
         <img
           src="assets/images/bg/section-bg1.svg"
           alt="image"
@@ -34,17 +34,6 @@ function AboutUs() {
                   banking and insurance, land and conveyance, law of torts,
                   employment law, and family law.
                 </p>
-              </div>
-              <div className="about-content1">
-                <h3>Get about our law firm and learn about our expertise.</h3>
-                <div className="lawyer-word">
-                  <p>
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent
-                    Classei consequat tincidunt turpis sit amet imperdiet for
-                    mind.
-                  </p>
-                  <h6>Dr. Ahmed Abdullah Didi, CEO-Founder</h6>
-                </div>
               </div>
             </div>
             <div className="col-lg-6 d-flex justify-content-lg-end justify-content-center">
