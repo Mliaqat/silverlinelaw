@@ -15,13 +15,13 @@ const AttorneysData = [
     id: 1,
     images: "assets/ahmed.png",
     name: "Dr. Ahmed Abdulla Didi",
-    designation: "Family Lawyer",
+    designation: "Senior Lawyer",
   },
   {
     id: 2,
     images: "assets/Uz.png",
     name: "Uz. Ahmed Maajid",
-    designation: "Family Lawyer",
+    designation: "Senior Lawyer",
   },
   // {
   //   id: 3,
@@ -96,47 +96,32 @@ function AttorneySection() {
                 {...arrtornySlider}
                 className="swiper attorney-slider pb-65"
               > */}
-                <div className="w-md-75 w-75 row justify-content-center g-4 m-auto">
-                  {AttorneysData.slice(0, 2).map((item) => {
-                    return (
-                      // <SwiperSlide
-                      //   key={item.id}
-                      //   className="swiper-slide wow fadeInDown"
-                      //   data-wow-duration="1.5s"
-                      //   data-wow-delay="0.2s"
-                      // >
-                        <div className="attorney-single  col-lg-4 col-md-6 col-sm-10">
-                          <img
-                            src={item.images}
-                            className="casestudy1"
-                            alt="image"
-                          />
-                          <div className="content">
-                            <h4>
-                              <Link href="/lawyer-details">{item.name}</Link>
-                            </h4>
-                            <p>{item.designation}</p>
-                            <ul className="social-list gap-3">
-                              <li>
-                                <a href="https://www.twitter.com/">
-                                  <i className="bx bxl-twitter" />
-                                </a>
-                              </li>
-                              <li>
-                                <a href="https://www.instagram.com/">
-                                  <i
-                                    className="bi bi-linkedin"
-                                  />
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      // </SwiperSlide>
-                    );
-                  })}
-                </div>
-                <div className="swiper-pagination d-flex align-items-center justify-content-center" />
+              <div className="w-md-75 w-75 row justify-content-center g-4 m-auto">
+                {AttorneysData.slice(0, 2).map((item) => {
+                  return (
+                    // <SwiperSlide
+                    //   key={item.id}
+                    //   className="swiper-slide wow fadeInDown"
+                    //   data-wow-duration="1.5s"
+                    //   data-wow-delay="0.2s"
+                    // >
+                    <div className="attorney-single  col-lg-4 col-md-6 col-sm-10">
+                      <img
+                        src={item.images}
+                        className="casestudy1"
+                        alt="image"
+                      />
+                      <div className="content">
+                        <h4>
+                          <Link href="/lawyer-details">{item.name}</Link>
+                        </h4>
+                        <p>{item.designation}</p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+              <div className="swiper-pagination d-flex align-items-center justify-content-center" />
               {/* </Swiper> */}
             </div>
           </div>
