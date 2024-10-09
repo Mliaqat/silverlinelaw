@@ -8,7 +8,7 @@ function Believe() {
         <div className="section-title1 text-center mt-4 lg:mt-0">
           <h2>WE BELIEVE IN</h2>
         </div>
-        <div className="grid xs:grid-cols-2 xl:grid-cols-4 gap-3">
+        <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-3">
           {[
             "Rule of Law",
             "Justice",
