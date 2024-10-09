@@ -65,14 +65,7 @@ function Header() {
                 Home
               </Link>
             </li>
-            <li>
-              <Link
-                href="/practice-area"
-                className={`${pathname == "/practice-area" ? "active" : ""}`}
-              >
-                Practice Area
-              </Link>
-            </li>
+
             <li>
               <Link
                 href="/about-us"
@@ -81,12 +74,38 @@ function Header() {
                 About Us
               </Link>
             </li>
+
+            <li>
+              <Link
+                href="/about-us"
+                className={`${pathname == "/about-us" ? "active" : ""}`}
+              >
+                Our Services
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                href="/about-us"
+                className={`${pathname == "/about-us" ? "active" : ""}`}
+              >
+                knowledge center
+              </Link>
+            </li>
             <li>
               <Link
                 href="/contact-us"
                 className={`${pathname == "/contact-us" ? "active" : ""}`}
               >
                 Contact Us
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/contact-us"
+                className={`${pathname == "/contact-us" ? "active" : ""}`}
+              >
+                Join our Team
               </Link>
             </li>
           </ul>

@@ -3,7 +3,7 @@ import React from "react";
 function AboutUs() {
   return (
     <>
-      <div className="about-section pt-3 pt-lg-120 pb-11" id="about">
+      <div className="about-section pt-3 pt-lg-120 pb-11 mt-5" id="about">
         <img
           src="assets/images/bg/section-bg1.svg"
           alt="image"
