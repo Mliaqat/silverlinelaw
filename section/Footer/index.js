@@ -12,10 +12,7 @@ function Footer() {
                   <Link href="/">
                     <h4>Silverline Law Associates</h4>
                   </Link>
-                  <p>
-                    Integer purus odio, placerat nec andi rhoncus in,
-                    ullamcorper nec dolorali aptent taciti sociosqu.
-                  </p>
+
                   <ul className="footer-social gap-4">
                     <li>
                       <a href="https://www.facebook.com/">
@@ -131,13 +128,13 @@ function Footer() {
                 <p>
                   <a
                     className="text-transparent"
-                    href="https://www.linkedin.com/in/liaqatshehzad/"
-                    target="_blank"
+                    // href="https://www.linkedin.com/in/liaqatshehzad/"
+                    // target="_blank"
                   >
-                    Copyright {new Date().getFullYear()}
+                    Copyright @ {new Date().getFullYear()}
                   </a>{" "}
                   <Link href="#" className="egns-lab">
-                    Silver Line Law
+                    Silverline Law
                   </Link>
                 </p>
               </div>

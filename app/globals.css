@@ -44,6 +44,66 @@
   --card-border-rgb: 131, 134, 135;
 }
 
+@font-face {
+  font-family: "Lora";
+  src: url(/assets/fonts/Lora-Bold.ttf) format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url(/assets/fonts/Lora-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url(/assets/fonts/Lora-Medium.ttf) format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url(/assets/fonts/Lora-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url(/assets/fonts/Exo-ExtraBold.ttf) format("truetype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url(/assets/fonts/Exo-Bold.ttf) format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url(/assets/fonts/Exo-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url(/assets/fonts/Exo-Medium.ttf) format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url(/assets/fonts/Exo-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url(/assets/fonts/Exo-Light.ttf) format("truetype");
+  font-weight: 300;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;

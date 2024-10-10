@@ -60,9 +60,7 @@ function Contact() {
               </div>
               <div className="section-title">
                 <span>CONTACT US</span>
-                <h2>
-                  Let us know your concern We Are Always Ready.
-                </h2>
+                <h2>Let us know your concern We Are Always Ready.</h2>
               </div>
             </div>
           </div>
@@ -181,15 +179,10 @@ function Contact() {
             <div className="col-xl-4 offset-xl-1 col-lg-5">
               <div className="contact-text text-lg-start text-center">
                 <h2>Lets Talk</h2>
-                <p>
-                  Integer quis libero semper, interdum odio non, consequat sem.
-                  Quisquewb pretium, quam ut lacinia ultricies, est urna cursus
-                  purus, ut tristique puru pretium, quam ut lacinia ultricies.
-                </p>
               </div>
               <ul className="address-list sibling4">
                 <li>
-                  <div className="icon">
+                  <div className="icon flex justify-center items-center">
                     <svg
                       width={44}
                       height={44}
@@ -221,7 +214,7 @@ function Contact() {
                   </div>
                 </li>
                 <li>
-                  <div className="icon">
+                  <div className="icon flex justify-center items-center">
                     <svg
                       width={44}
                       height={44}

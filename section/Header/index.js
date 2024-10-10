@@ -51,7 +51,7 @@ function Header() {
         >
           <div className="mobile-logo-area d-xl-none d-flex justify-content-between">
             <div className="mobile-logo-wrap ">
-              <Link href="/">
+              <Link href="/" className="font-bold">
                 <p>Silverline Law Associates</p>
               </Link>
             </div>
@@ -77,8 +77,8 @@ function Header() {
 
             <li>
               <Link
-                href="/about-us"
-                className={`${pathname == "/about-us" ? "active" : ""}`}
+                href="/services"
+                className={`${pathname == "/services" ? "active" : ""}`}
               >
                 Our Services
               </Link>
@@ -86,8 +86,8 @@ function Header() {
 
             <li>
               <Link
-                href="/about-us"
-                className={`${pathname == "/about-us" ? "active" : ""}`}
+                href="/knowledge-center"
+                className={`${pathname == "/knowledge-center" ? "active" : ""}`}
               >
                 knowledge center
               </Link>

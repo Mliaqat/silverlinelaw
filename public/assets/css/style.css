@@ -1814,7 +1814,7 @@ header.style-2 .main-nav ul li i {
   header.style-2 .main-nav ul {
     float: none;
     text-align: left;
-    padding: 25px 10px 25px 0;
+    padding: 10px 10px 25px 0;
   }
   header.style-2 .main-nav ul li {
     display: block;
@@ -9797,3 +9797,46 @@ h3.comment-title {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.believeCard {
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid #eee;
+  margin-top: 20px;
+}
+
+.believeCard .sl-number {
+  position: absolute;
+  bottom: 0px;
+  right: 15px;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: rgba(41, 43, 49, 0.1);
+  font-family: var(--font-lora);
+}
+
+.believeCard .image img {
+  display: none;
+  visibility: hidden;
+}
+
+.believeCard .content {
+  padding: 35px 15px;
+}
+
+
+
+
+
+.believeCard .content .text p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: var(--font-lora);
+}
+

@@ -82,11 +82,6 @@ function AttorneySection() {
             <div className="col-md-7">
               <div className="section-title1 text-center">
                 <h2>Our Attorneys</h2>
-                <p>
-                  In consequat tincidunt turpis sit amet imperdiet. Praesent
-                  Class officelan nonatoureanor mauris laoreet, iaculis libero
-                  quis.Curabitur et tempus eri consequat tincidunt.
-                </p>
               </div>
             </div>
           </div>

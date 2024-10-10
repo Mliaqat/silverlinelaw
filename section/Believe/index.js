@@ -1,4 +1,3 @@
-import React from "react";
 import "./Believe.scss";
 
 function Believe() {
@@ -15,11 +14,18 @@ function Believe() {
             "Affordable Legal Service ",
             "Commitment and Diligence",
           ].map((data, index) => (
-            <div className="flex flex-col items-center justify-center shadow-sm border   px-3 py-5 rounded-[12px] relative">
-              <p className="font-bold text-6xl mb-1 absolute left-3 top-0 opacity-25 -z-10 text-[#2B3D5C]">
-                0{index + 1}
-              </p>
-              <p className="font-bold text-xl whitespace-nowrap mt-3">{data}</p>
+            <div
+              className={`believeCard relative wow ${
+                index > 1 ? "fadeInRight" : "fadeInLeft"
+              }`}
+              key={index}
+            >
+              <span className="sl-number">0{index + 1}</span>
+              <div className="content">
+                <div className="text">
+                  <p className="font-bold text-xl text-center">{data}</p>
+                </div>
+              </div>
             </div>
           ))}
         </div>
