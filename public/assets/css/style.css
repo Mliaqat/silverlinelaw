@@ -1973,7 +1973,7 @@ header.style-2 .main-nav ul li i {
 
 .banner-section .banner-content {
   text-align: center;
-  padding: 120px 10px;
+  padding: 20px 10px;
 }
 
 .banner-section .banner-content > span {
@@ -9830,13 +9830,17 @@ h3.comment-title {
   padding: 35px 15px;
 }
 
-
-
-
-
 .believeCard .content .text p {
   font-size: 1.5rem;
   font-weight: 600;
   font-family: var(--font-lora);
 }
 
+.slick-prev {
+  left: -3rem !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 3rem !important;
+}

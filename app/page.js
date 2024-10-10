@@ -9,10 +9,9 @@ import Services from "@/section/Services";
 export default function Home() {
   return (
     <>
-      <div className="position-relative">
-        <HeroSection />
-        <div className="mt-3 hidden">{/* <Records /> */}</div>
-      </div>
+      <HeroSection />
+      <div className="mt-3 hidden">{/* <Records /> */}</div>
+
       <AboutUs />
       <Believe />
       <Services />
