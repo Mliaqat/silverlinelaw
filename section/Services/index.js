@@ -139,9 +139,9 @@ function Services() {
                 {" "}
                 <h2>Our Services</h2>
               </div>
-              <h2 className="text-center">
+              <h3 className="text-center text-lg font-bold">
                 We are for you to give you the best solutions.
-              </h2>
+              </h3>
             </div>
             <Slider
               spaceBetween={20}

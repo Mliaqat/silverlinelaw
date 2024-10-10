@@ -9,6 +9,8 @@ import "../public/assets/css/boxicons.min.css";
 import "../public/assets/css/bootstrap-icons.css";
 import "../public/assets/css/swiper-bundle.css";
 import "../public/assets/css/style.css";
+import "../public/assets/css/slick.css";
+import "../public/assets/css/slick-theme.css";
 import Header from "@/section/Header";
 import Footer from "@/section/Footer";
 

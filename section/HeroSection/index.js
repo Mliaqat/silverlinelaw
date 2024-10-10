@@ -105,7 +105,7 @@ function HeroSection() {
     autoplay: 1000,
     spaceBetween: 30,
     margin: 30,
-    rows: 1,
+    rows: 2,
     loop: true,
     roundLengths: true,
     pagination: {
@@ -118,7 +118,7 @@ function HeroSection() {
     },
     responsive: [
       {
-        breakpoint: 992,
+        breakpoint: 1300,
         settings: {
           slidesToShow: 2,
         },
@@ -144,41 +144,35 @@ function HeroSection() {
       <div className="banner-section">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="practice-area-section2 pb-120 max-w-[1700px] m-auto px-4">
+            <div className="practice-area-section2  max-w-[1700px] m-auto px-4">
               <div className="row align-items-end">
-                <div className="col-12 m-auto relative">
+                <div className="col-12 m-auto relative w-[88%] md:w-full">
                   <Slider
                     spaceBetween={20}
                     {...dublerowSlide}
                     className="slick-wrapper"
                   >
-                    {practiceAreas.map(
-                      ({
-                        id,
-                        number,
-                        imageSrc,
-                        iconSrc,
-                        title,
-                        description,
-                      }) => (
-                        <div className="practice-single2 bg-white rounded-lg" key={id}>
-                          <div className="content">
-                            <div className="text">
-                              <h5>
-                                <Link href="/practice-details">{title}</Link>
-                              </h5>
-                              <p className="mt-2">{description}</p>
-                              <Link
-                                href="/practice-details"
-                                className="details-btn"
-                              >
-                                Learn More
-                              </Link>
-                            </div>
+                    {practiceAreas.map(({ id, title, description }) => (
+                      <div
+                        className="practice-single2 bg-white rounded-lg"
+                        key={id}
+                      >
+                        <div className="content">
+                          <div className="text">
+                            <h5>
+                              <Link href="/practice-details">{title}</Link>
+                            </h5>
+                            <p className="my-2">{description}</p>
+                            <Link
+                              href="/practice-details"
+                              className="details-btn"
+                            >
+                              Learn More
+                            </Link>
                           </div>
                         </div>
-                      )
-                    )}
+                      </div>
+                    ))}
                   </Slider>
                 </div>
               </div>
