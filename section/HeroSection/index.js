@@ -180,7 +180,7 @@ function HeroSection() {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-0">
+        <div className="absolute bottom-8">
           <GetInTouch />
         </div>
       </div>

@@ -42,8 +42,8 @@ Template Name: Corelaw- Law firm, Lawyers & Legal Service HTML Template
 
 :root {
   /*color Variable*/
-  --primary-color1: #dea057;
-  --primary-color2: #ca9457;
+  --primary-color1: #1f3864;
+  --primary-color2: #527bc2;
   --primary-color3: rgb(215, 182, 121);
   --primary-light2: #fbf8f6;
   --primary-light: rgba(222, 160, 87, 0.15);
@@ -520,10 +520,14 @@ i.bx {
 .section-title1 h2 {
   font-size: 3rem;
   font-weight: 700;
-  color: #dea057;
-  background: -webkit-linear-gradient(40deg, #202020 0%, #dea054 80%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--primary-color1);
+  /* background: -webkit-linear-gradient(
+    40deg,
+    #202020 0%,
+    var(--primary-color1) 80%
+  ); */
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
   margin-bottom: 15px;
   margin-top: -7px;
   display: inline-block;
@@ -8152,19 +8156,7 @@ h3.comment-title {
  21. Footer-section
 =======================================*/
 .footer-section {
-  background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(41, 43, 49, 0.6)),
-      to(rgba(41, 43, 49, 0.6))
-    ),
-    url("../images/bg/footer1-bg.png");
-  background-image: linear-gradient(
-      rgba(41, 43, 49, 0.6),
-      rgba(41, 43, 49, 0.6)
-    ),
-    url("../images/bg/footer1-bg.png");
+  background-color: var(--primary-color1);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -8247,7 +8239,7 @@ h3.comment-title {
 .footer-section .footer-item h4 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--primary-color1);
+  color: var(--white);
   margin-bottom: 20px;
 }
 
@@ -8323,7 +8315,7 @@ h3.comment-title {
 }
 
 .footer-section .footer-item .contact-list li .icon svg {
-  fill: var(--primary-color1);
+  fill: var(--white);
 }
 
 .footer-section .footer-item .contact-list li .text {
@@ -8368,7 +8360,7 @@ h3.comment-title {
   font-size: 12px;
   font-weight: 500;
   font-family: var(--font-exo);
-  color: var(--primary-color1);
+  color: var(--white);
   display: inline-block;
   position: relative;
   padding-bottom: 3px;
@@ -9279,7 +9271,7 @@ h3.comment-title {
 }
 
 .breadcrumb .breadcrumb-item {
-  color: var(--primary-color3);
+  color: var(--white);
   font-size: 20px;
   font-weight: 500;
   font-family: var(--font-exo);
@@ -9293,7 +9285,7 @@ h3.comment-title {
 }
 
 .breadcrumb .breadcrumb-item.active {
-  color: #dddddd;
+  color: var(--white);
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -9313,7 +9305,7 @@ h3.comment-title {
 .service-details-text h2 {
   font-size: 2.813rem;
   font-weight: 700;
-  color: var(--text-color1);
+  color: var(--white);
   margin-bottom: 25px;
   line-height: 1.2;
 }

@@ -19,7 +19,7 @@ function Breadcrumb(props) {
                   <li className="breadcrumb-item">
                     <Link href="/">Home</Link>
                   </li>
-                  <li className="breadcrumb-item active" aria-current="page">
+                  <li className="breadcrumb-item text-white" aria-current="page">
                     {props.pageName}
                   </li>
                 </ol>
