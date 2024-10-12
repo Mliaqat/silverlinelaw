@@ -2,6 +2,7 @@ import AboutUs from "@/section/AboutUs";
 import AttorneySection from "@/section/Attorneys";
 import Believe from "@/section/Believe";
 import HeroSection from "@/section/HeroSection";
+import GetInTouch from "@/section/OnelineContact";
 import Practice from "@/section/Practice";
 import Records from "@/section/Records";
 import Services from "@/section/Services";

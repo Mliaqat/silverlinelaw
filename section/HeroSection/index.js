@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import Link from "next/link";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import GetInTouch from "../OnelineContact";
 
 const practiceAreas = [
   {
@@ -141,8 +142,8 @@ function HeroSection() {
   };
   return (
     <>
-      <div className="banner-section">
-        <div className="container">
+      <div className="banner-section relative">
+        <div className="container pb-20">
           <div className="row justify-content-center">
             <div className="practice-area-section2  max-w-[1700px] m-auto px-4">
               <div className="row align-items-end">
@@ -178,6 +179,9 @@ function HeroSection() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="absolute bottom-0">
+          <GetInTouch />
         </div>
       </div>
     </>
