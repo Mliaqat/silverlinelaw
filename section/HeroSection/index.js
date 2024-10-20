@@ -147,7 +147,7 @@ function HeroSection() {
           <div className="row justify-content-center">
             <div className="practice-area-section2  max-w-[1700px] m-auto px-4">
               <div className="row align-items-end">
-                <div className="col-12 m-auto relative w-[88%] md:w-full">
+                <div className="col-12 m-auto relative w-[80%] 2xl:w-full">
                   <Slider
                     spaceBetween={20}
                     {...dublerowSlide}
@@ -180,7 +180,7 @@ function HeroSection() {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-8">
+        <div className="absolute bottom-4">
           <GetInTouch />
         </div>
       </div>

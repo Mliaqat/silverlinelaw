@@ -36,7 +36,7 @@ function AboutUs() {
                 </p>
               </div>
             </div>
-            <div className="hidden lg:d-flex  col-lg-6 justify-content-lg-end justify-content-center">
+            <div className="hidden lg:flex  col-lg-6 justify-content-lg-end justify-content-center">
               <div
                 className="about1-img wow fadeInRight"
                 data-wow-duration="1.5s"

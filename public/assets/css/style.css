@@ -1910,7 +1910,7 @@ header.style-2 .main-nav ul li i {
 
 .banner-section {
   overflow: hidden;
-  height: 70vh;
+  height: 80vh;
   position: relative;
   z-index: 1;
   display: -webkit-box;
@@ -3984,8 +3984,8 @@ header.style-2 .main-nav ul li i {
   overflow: hidden; /* Hide overflow */
   display: -webkit-box; /* Use flexbox for the text */
   -webkit-box-orient: vertical; /* Set box orientation to vertical */
-  -webkit-line-clamp: 2; /* Limit to 2 lines */
-  line-clamp: 2; /* (for better browser support) */
+  -webkit-line-clamp: 1; /* Limit to 2 lines */
+  line-clamp: 1; /* (for better browser support) */
   max-height: 3em; /* Set max height to 2 lines */
 }
 
