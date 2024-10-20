@@ -61,42 +61,42 @@ const practiceAreas = [
     description:
       "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
   },
-  {
-    id: 7,
-    number: "06",
-    imageSrc: "assets/images/bg/practice24.png",
-    iconSrc: "assets/images/icons/practice-icon21.svg",
-    title: "Due Diligence Investigation",
-    description:
-      "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
-  },
-  {
-    id: 8,
-    number: "06",
-    imageSrc: "assets/images/bg/practice24.png",
-    iconSrc: "assets/images/icons/practice-icon21.svg",
-    title: "Legal Advise",
-    description:
-      "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
-  },
-  {
-    id: 9,
-    number: "06",
-    imageSrc: "assets/images/bg/practice24.png",
-    iconSrc: "assets/images/icons/practice-icon21.svg",
-    title: "Business Formation",
-    description:
-      "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
-  },
-  {
-    id: 10,
-    number: "06",
-    imageSrc: "assets/images/bg/practice24.png",
-    iconSrc: "assets/images/icons/practice-icon21.svg",
-    title: "Negotiation",
-    description:
-      "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
-  },
+  // {
+  //   id: 7,
+  //   number: "06",
+  //   imageSrc: "assets/images/bg/practice24.png",
+  //   iconSrc: "assets/images/icons/practice-icon21.svg",
+  //   title: "Due Diligence Investigation",
+  //   description:
+  //     "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
+  // },
+  // {
+  //   id: 8,
+  //   number: "06",
+  //   imageSrc: "assets/images/bg/practice24.png",
+  //   iconSrc: "assets/images/icons/practice-icon21.svg",
+  //   title: "Legal Advise",
+  //   description:
+  //     "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
+  // },
+  // {
+  //   id: 9,
+  //   number: "06",
+  //   imageSrc: "assets/images/bg/practice24.png",
+  //   iconSrc: "assets/images/icons/practice-icon21.svg",
+  //   title: "Business Formation",
+  //   description:
+  //     "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
+  // },
+  // {
+  //   id: 10,
+  //   number: "06",
+  //   imageSrc: "assets/images/bg/practice24.png",
+  //   iconSrc: "assets/images/icons/practice-icon21.svg",
+  //   title: "Negotiation",
+  //   description:
+  //     "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
+  // },
 ];
 
 function HeroSection() {
@@ -147,34 +147,37 @@ function HeroSection() {
           <div className="row justify-content-center">
             <div className="practice-area-section2  max-w-[1700px] m-auto px-4">
               <div className="row align-items-end">
-                <div className="col-12 m-auto relative w-[80%] 2xl:w-full">
-                  <Slider
-                    spaceBetween={20}
-                    {...dublerowSlide}
-                    className="slick-wrapper"
-                  >
+                <div className="col-12 m-auto relative sm:w-[90%] 2xl:w-full">
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                     {practiceAreas.map(({ id, title, description }) => (
                       <div
-                        className="practice-single2 bg-white rounded-lg"
+                        className="rounded-lg"
                         key={id}
+                        style={{
+                          background: `${id % 2 == 0 ? "#1f3864" : "#fff"}`,
+                          color: `${id % 2 == 0 ? "#fff" : "#1f3864"}`,
+                        }}
                       >
-                        <div className="content">
-                          <div className="text">
-                            <h5>
-                              <Link href="/practice-details">{title}</Link>
-                            </h5>
-                            <p className="my-2">{description}</p>
-                            <Link
-                              href="/practice-details"
-                              className="details-btn"
-                            >
-                              Learn More
-                            </Link>
-                          </div>
+                        <div className="flex justify-center pt-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="#000000"
+                            width="50px"
+                            height="50px"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M22.951,11.259a.919.919,0,0,0-.057-.189c-.007-.014-.006-.03-.013-.044l-3.5-6.5a.913.913,0,0,0-.142-.187A.989.989,0,0,0,18.5,4H13V2a1,1,0,0,0-2,0V4H5.5a.989.989,0,0,0-.739.339.913.913,0,0,0-.142.187l-3.5,6.5c-.007.014-.006.03-.013.044a.91.91,0,0,0-.057.188.98.98,0,0,0-.04.2c0,.015-.009.028-.009.044a4.5,4.5,0,0,0,9,0c0-.016-.008-.029-.009-.044a.97.97,0,0,0-.04-.2.919.919,0,0,0-.057-.189c-.007-.014-.006-.03-.013-.044L7.174,6H11V18H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2H13V6h3.826l-2.707,5.026c-.007.014-.006.03-.013.044a.91.91,0,0,0-.057.188.98.98,0,0,0-.04.2c0,.015-.009.028-.009.044a4.5,4.5,0,0,0,9,0c0-.016-.008-.029-.009-.044A.97.97,0,0,0,22.951,11.259ZM5.5,14a2.5,2.5,0,0,1-2.291-1.5H7.791A2.5,2.5,0,0,1,5.5,14Zm1.826-3.5H3.674L5.5,7.109ZM18.5,7.109,20.326,10.5H16.674ZM18.5,14a2.5,2.5,0,0,1-2.291-1.5h4.582A2.5,2.5,0,0,1,18.5,14ZM21,22a1,1,0,0,1-1,1H4a1,1,0,0,1,0-2H20A1,1,0,0,1,21,22Z"
+                              fill={`${id % 2 == 0 ? "#fff" : "#1f3864"}`}
+                            />
+                          </svg>
                         </div>
+                        <h5 className="text-center font-bold pb-4 pt-2 px-2">
+                          <Link href="/practice-details">{title}</Link>
+                        </h5>
                       </div>
                     ))}
-                  </Slider>
+                  </div>
                 </div>
               </div>
             </div>

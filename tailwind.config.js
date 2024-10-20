@@ -9,6 +9,9 @@ module.exports = {
     "./section/**/**/*.{html,js}",
   ],
   theme: {
+    colors: {
+      primary: "#1f3864",
+    },
     extend: {},
   },
   plugins: [],

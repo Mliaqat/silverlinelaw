@@ -63,7 +63,7 @@ function Services() {
   return (
     <>
       <Breadcrumb title="Services" pageName="Services" />
-      <div className="grid grid-cols-2 px-3 py-4 gap-3">
+      <div className="grid sm:grid-cols-2 px-3 py-4 gap-3">
         {practiceAreas.map(
           ({ id, number, imageSrc, iconSrc, title, description }) => (
             <div className="practice-single2" key={id}>

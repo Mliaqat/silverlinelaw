@@ -513,9 +513,6 @@ i.bx {
 /*=======================================
  3. section-title
 =======================================*/
-.section-title1 {
-  margin-bottom: 60px;
-}
 
 .section-title1 h2 {
   font-size: 3rem;
@@ -1922,6 +1919,12 @@ header.style-2 .main-nav ul li i {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+@media (max-width: 991px) {
+  .banner-section {
+    height: 108vh;
+  }
 }
 
 .banner-section::before {
@@ -9803,7 +9806,6 @@ h3.comment-title {
 }
 
 .believeCard {
-  display: flex;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;

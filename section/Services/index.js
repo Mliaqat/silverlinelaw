@@ -78,24 +78,24 @@ const practiceAreas = [
     description:
       "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
   },
-  {
-    id: 5,
-    number: "05",
-    imageSrc: "assets/images/bg/practice23.png",
-    iconSrc: "assets/images/icons/practice-icon21.svg",
-    title: "News Items Related to Law and Judiciary",
-    description:
-      "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
-  },
-  {
-    id: 6,
-    number: "06",
-    imageSrc: "assets/images/bg/practice24.png",
-    iconSrc: "assets/images/icons/practice-icon21.svg",
-    title: "Landmark Cases",
-    description:
-      "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
-  },
+  // {
+  //   id: 5,
+  //   number: "05",
+  //   imageSrc: "assets/images/bg/practice23.png",
+  //   iconSrc: "assets/images/icons/practice-icon21.svg",
+  //   title: "News Items Related to Law and Judiciary",
+  //   description:
+  //     "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
+  // },
+  // {
+  //   id: 6,
+  //   number: "06",
+  //   imageSrc: "assets/images/bg/practice24.png",
+  //   iconSrc: "assets/images/icons/practice-icon21.svg",
+  //   title: "Landmark Cases",
+  //   description:
+  //     "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
+  // },
 ];
 
 function Services() {
@@ -149,11 +149,12 @@ function Services() {
                 We are for you to give you the best solutions.
               </h3>
             </div>
-            <Slider
+            {/* <Slider
               spaceBetween={20}
               {...dublerowSlide}
               className="slick-wrapper mt-40"
-            >
+            > */}
+            <div className="grid sm:grid-cols-2 gap-3 2xl:grid-cols-3">
               {practiceAreas.map(
                 ({ id, number, imageSrc, iconSrc, title, description }) => (
                   <div className="practice-single2" key={id}>
@@ -178,7 +179,32 @@ function Services() {
                   </div>
                 )
               )}
-            </Slider>
+            </div>
+            {/* </Slider> */}
+            <div className="flex justify-end mt-3">
+              <Link
+                href="/services"
+                className="text-[#1f3864] font-bold flex items-center gap-1"
+              >
+                More Services
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M6 12H18M18 12L13 7M18 12L13 17"
+                    stroke="#000000"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    fill="#1f3864"
+                  />
+                </svg>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
