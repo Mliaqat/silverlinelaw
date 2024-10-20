@@ -148,7 +148,7 @@ function HeroSection() {
             <div className="practice-area-section2  max-w-[1700px] m-auto px-4">
               <div className="row align-items-end">
                 <div className="col-12 m-auto relative sm:w-[90%] 2xl:w-full">
-                  <div className="grid sm:grid-cols-3 gap-4">
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-4">
                     {practiceAreas.map(({ id, title, description }) => (
                       <div
                         className="rounded-lg"
