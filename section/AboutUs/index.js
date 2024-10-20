@@ -16,9 +16,9 @@ function AboutUs() {
               data-wow-duration="1.5s"
               data-wow-delay="200ms"
             >
-              <div className="section-title1">
+              <div className="section-title1 px-6">
                 <h2>About Silver Line Law</h2>
-                <p>
+                <p className="">
                   Silver Line is a Law Firm registered in the Republic of
                   Maldives by a partnership of licensed and experienced legal
                   professionals. We provide legal services of a wide range,
@@ -37,19 +37,7 @@ function AboutUs() {
               </div>
             </div>
             <div className="hidden lg:flex  col-lg-6 justify-content-lg-end justify-content-center">
-              <div
-                className="about1-img wow fadeInRight"
-                data-wow-duration="1.5s"
-                data-wow-delay="0.2s"
-              >
-                <img src="assets/protifilo.jpg" alt="image" />
-                {/* <div className="experience-tag">
-                  <h2>
-                    25 <span>Years</span>
-                  </h2>
-                  <p>We Have A Lot Of Real Experience</p>
-                </div> */}
-              </div>
+              <img src="assets/protifilo.jpg" alt="image" />
             </div>
           </div>
         </div>

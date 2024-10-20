@@ -20,7 +20,7 @@ function Believe() {
               }`}
               key={index}
             >
-              <span className="sl-number">0{index + 1}</span>
+              {/* <span className="sl-number">0{index + 1}</span> */}
               <div className="content">
                 <div className="text">
                   <p className="font-bold text-xl text-center">{data}</p>

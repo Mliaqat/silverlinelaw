@@ -48,7 +48,8 @@ const practiceAreas = [
     imageSrc: "assets/images/bg/practice23.png",
     iconSrc: "assets/images/icons/practice-icon21.svg",
     title: "Pro Bono Service",
-    description: "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
+    description:
+      "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
   },
   {
     id: 2,
@@ -56,7 +57,8 @@ const practiceAreas = [
     imageSrc: "assets/images/bg/practice24.png",
     iconSrc: "assets/images/icons/practice-icon21.svg",
     title: "Interested in Investing in the Maldives?",
-    description: "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
+    description:
+      "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
   },
   {
     id: 3,
@@ -64,7 +66,8 @@ const practiceAreas = [
     imageSrc: "assets/images/bg/practice21.png",
     iconSrc: "assets/images/icons/practice-icon21.svg",
     title: "Setting Up a Business in the Maldives",
-    description: "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
+    description:
+      "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
   },
   {
     id: 4,
@@ -72,7 +75,8 @@ const practiceAreas = [
     imageSrc: "assets/images/bg/practice22.png",
     iconSrc: "assets/images/icons/practice-icon21.svg",
     title: "An Introduction to the Maldives Legal System",
-    description: "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
+    description:
+      "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
   },
   {
     id: 5,
@@ -80,7 +84,8 @@ const practiceAreas = [
     imageSrc: "assets/images/bg/practice23.png",
     iconSrc: "assets/images/icons/practice-icon21.svg",
     title: "News Items Related to Law and Judiciary",
-    description: "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
+    description:
+      "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
   },
   {
     id: 6,
@@ -88,7 +93,8 @@ const practiceAreas = [
     imageSrc: "assets/images/bg/practice24.png",
     iconSrc: "assets/images/icons/practice-icon21.svg",
     title: "Landmark Cases",
-    description: "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
+    description:
+      "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
   },
 ];
 
@@ -151,7 +157,7 @@ function Services() {
               {practiceAreas.map(
                 ({ id, number, imageSrc, iconSrc, title, description }) => (
                   <div className="practice-single2" key={id}>
-                    <span className="sl-number">{number}</span>
+                    {/* <span className="sl-number">{number}</span> */}
                     <div className="image">
                       <img src={imageSrc} alt="image" />
                     </div>
