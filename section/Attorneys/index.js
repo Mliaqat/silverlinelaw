@@ -35,11 +35,12 @@ function AttorneySection() {
   const dublerowSlide = {
     slidesToScroll: 2,
     slidesToShow: 4,
-    autoplay: 1000,
+    // autoplay: 1000,
     spaceBetween: 30,
     margin: 30,
     rows: 1,
     loop: true,
+    dots: true,
     roundLengths: true,
     pagination: {
       el: ".swiper-pagination",
@@ -53,7 +54,7 @@ function AttorneySection() {
       {
         breakpoint: 1300,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
         },
       },
       {
@@ -65,7 +66,7 @@ function AttorneySection() {
       {
         breakpoint: 576,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
         },
       },
     ],
@@ -76,25 +77,30 @@ function AttorneySection() {
         <div className="pb-20">
           <div className="row justify-content-center">
             <div className="practice-area-section2  max-w-[1700px] m-auto px-4">
-              <div className="row align-items-end">
-                <div className="col-12 m-auto relative w-full">
+              <div className="row align-items-end m-auto w-[90%] lg:w-full">
+                <div className="col-12 m-auto justify-center relative w-full">
                   <Slider
                     spaceBetween={20}
                     {...dublerowSlide}
-                    className="slick-wrapper"
+                    className="flex justify-center"
                   >
                     {AttorneysData.map((item, index) => (
-                      <div className="attorney-single relative" key={index}>
-                        <img
-                          src={item.images}
-                          className="casestudy1"
-                          alt="image"
-                        />
-                        <div className="content absolute bottom-10 left-0">
-                          <h4>
-                            <Link href="/lawyer-details">{item.name}</Link>
-                          </h4>
-                          <p>{item.designation}</p>
+                      <div key={index}>
+                        <div
+                          className="attorney-single flex justify-center relative w-full"
+                          style={{ display: "flex" }}
+                        >
+                          <img
+                            src={item.images}
+                            className="casestudy1"
+                            alt="image"
+                          />
+                          <div className="content absolute bottom-10 left-0">
+                            <h4>
+                              <Link href="/lawyer-details">{item.name}</Link>
+                            </h4>
+                            <p>{item.designation}</p>
+                          </div>
                         </div>
                       </div>
                     ))}
