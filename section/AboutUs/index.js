@@ -12,13 +12,13 @@ function AboutUs() {
         <div className="container">
           <div className="row">
             <div
-              className="col-lg-6 text-lg-start text-center wow fadeInDown"
+              className="col-lg-6 text-lg-start text-center wow fadeInLeft"
               data-wow-duration="1.5s"
               data-wow-delay="200ms"
             >
               <div className="section-title1 px-6">
                 <h2>About Silver Line Law</h2>
-                <p className="">
+                <p className="leading-10 tracking-wide">
                   Silver Line is a Law Firm registered in the Republic of
                   Maldives by a partnership of licensed and experienced legal
                   professionals. We provide legal services of a wide range,
@@ -36,8 +36,12 @@ function AboutUs() {
                 </p>
               </div>
             </div>
-            <div className="hidden lg:flex  col-lg-6 justify-content-lg-end justify-content-center">
-              <img src="assets/protifilo.jpg" alt="image" />
+            <div className="hidden lg:flex  col-lg-6 justify-content-lg-end justify-content-center fadeInRight">
+              <img
+                src="assets/protifilo.jpg"
+                className="shadow rounded fadeInRight"
+                alt="image"
+              />
             </div>
           </div>
         </div>

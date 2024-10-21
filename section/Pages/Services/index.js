@@ -65,8 +65,8 @@ function Services() {
       <Breadcrumb title="Services" pageName="Services" />
       <div className="grid sm:grid-cols-2 px-3 py-4 gap-3">
         {practiceAreas.map(
-          ({ id, number, imageSrc, iconSrc, title, description }) => (
-            <div className="practice-single2" key={id}>
+          ({ id, imageSrc, iconSrc, title, description }) => (
+            <div className="practice-single2 p-2 rounded" key={id}>
               {/* <span className="sl-number">{number}</span> */}
               <div className="image">
                 <img src={imageSrc} alt="image" />
