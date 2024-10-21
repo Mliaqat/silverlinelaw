@@ -518,13 +518,6 @@ i.bx {
   font-size: 3rem;
   font-weight: 700;
   color: var(--primary-color1);
-  /* background: -webkit-linear-gradient(
-    40deg,
-    #202020 0%,
-    var(--primary-color1) 80%
-  ); */
-  /* -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
   margin-bottom: 15px;
   margin-top: -7px;
   display: inline-block;
@@ -1907,7 +1900,6 @@ header.style-2 .main-nav ul li i {
 
 .banner-section {
   overflow: hidden;
-  height: 80vh;
   position: relative;
   z-index: 1;
   display: -webkit-box;
@@ -3962,7 +3954,7 @@ header.style-2 .main-nav ul li i {
 }
 
 .practice-single2 .content {
-  padding: 20px 15px;
+  /* padding: 20px 15px; */
 }
 
 .practice-single2 .content .icon {
@@ -8235,10 +8227,6 @@ h3.comment-title {
   margin-bottom: 0px;
 }
 
-.footer-section .footer-top {
-  padding: 90px 0px;
-}
-
 .footer-section .footer-item h4 {
   font-size: 1.5rem;
   font-weight: 700;
@@ -9849,4 +9837,5 @@ h3.comment-title {
 .slick-prev:before,
 .slick-next:before {
   font-size: 3rem !important;
+  color: var(--primary-color1) !important;
 }

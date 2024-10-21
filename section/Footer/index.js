@@ -4,9 +4,9 @@ function Footer() {
   return (
     <>
       <footer className="footer-section">
-        <div className="footer-top">
+        <div className="footer-top py-4">
           <div className="container-xl container-lg-fluid container">
-            <div className="row gy-5">
+            <div className="row gy-3">
               <div className="col-lg-6 col-md-6">
                 <div className="footer-about footer-item">
                   <Link href="/">
@@ -30,10 +30,35 @@ function Footer() {
                       </a>
                     </li>
                   </ul>
-                  <div className="open-hour">
+                  {/* <div className="open-hour">
                     <h6>Open Hour</h6>
                     <p>Sunday To Thursday, 9.00 AM - 10.30 PM</p>
-                  </div>
+                  </div> */}
+                  <ul className="contact-list mt-3">
+                    <li>
+                      <div className="icon">
+                        <svg
+                          width={23}
+                          height={23}
+                          viewBox="0 0 23 23"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g clipPath="url(#clip0_169_19596)">
+                            <path d="M18.3087 3.93864C16.9129 1.52975 14.4335 0.0580615 11.6764 0.00181934C11.5588 -0.000606445 11.4403 -0.000606445 11.3226 0.00181934C8.56552 0.0580615 6.08619 1.52975 4.69029 3.93864C3.26348 6.4009 3.22444 9.35855 4.58585 11.8504L10.2893 22.2897C10.2918 22.2943 10.2944 22.2989 10.297 22.3035C10.548 22.7397 10.9975 23 11.4996 23C12.0016 23 12.4512 22.7396 12.7021 22.3035C12.7047 22.2989 12.7073 22.2943 12.7098 22.2897L18.4132 11.8504C19.7746 9.35855 19.7355 6.4009 18.3087 3.93864ZM11.4995 10.4219C9.71606 10.4219 8.26513 8.97097 8.26513 7.18752C8.26513 5.40408 9.71606 3.95315 11.4995 3.95315C13.2829 3.95315 14.7339 5.40408 14.7339 7.18752C14.7339 8.97097 13.283 10.4219 11.4995 10.4219Z" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_169_19596">
+                              <rect width={23} height={23} fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div className="text">
+                        Ma. Maaraa, 1st Flr, Gulaabee Magu, Male', (20000),
+                        Republic of Maldives.
+                      </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
 
@@ -92,29 +117,6 @@ function Footer() {
                         </a>
                       </div>
                     </li>
-                    <li>
-                      <div className="icon">
-                        <svg
-                          width={23}
-                          height={23}
-                          viewBox="0 0 23 23"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <g clipPath="url(#clip0_169_19596)">
-                            <path d="M18.3087 3.93864C16.9129 1.52975 14.4335 0.0580615 11.6764 0.00181934C11.5588 -0.000606445 11.4403 -0.000606445 11.3226 0.00181934C8.56552 0.0580615 6.08619 1.52975 4.69029 3.93864C3.26348 6.4009 3.22444 9.35855 4.58585 11.8504L10.2893 22.2897C10.2918 22.2943 10.2944 22.2989 10.297 22.3035C10.548 22.7397 10.9975 23 11.4996 23C12.0016 23 12.4512 22.7396 12.7021 22.3035C12.7047 22.2989 12.7073 22.2943 12.7098 22.2897L18.4132 11.8504C19.7746 9.35855 19.7355 6.4009 18.3087 3.93864ZM11.4995 10.4219C9.71606 10.4219 8.26513 8.97097 8.26513 7.18752C8.26513 5.40408 9.71606 3.95315 11.4995 3.95315C13.2829 3.95315 14.7339 5.40408 14.7339 7.18752C14.7339 8.97097 13.283 10.4219 11.4995 10.4219Z" />
-                          </g>
-                          <defs>
-                            <clipPath id="clip0_169_19596">
-                              <rect width={23} height={23} fill="white" />
-                            </clipPath>
-                          </defs>
-                        </svg>
-                      </div>
-                      <div className="text">
-                        Ma. Maaraa, 1st Flr, Gulaabee Magu, Male', (20000),
-                        Republic of Maldives.
-                      </div>
-                    </li>
                   </ul>
                 </div>
               </div>
@@ -124,21 +126,10 @@ function Footer() {
         <div className="container">
           <div className="footer-bottom">
             <div className="row d-flex align-items-center g-3">
-              <div className="col-lg-6 d-flex justify-content-lg-start justify-content-center text-lg-start text-center px-1">
-                <p>
-                  <a
-                    className="text-transparent"
-                    // href="https://www.linkedin.com/in/liaqatshehzad/"
-                    // target="_blank"
-                  >
-                    Copyright @ {new Date().getFullYear()}
-                  </a>{" "}
-                  <Link href="#" className="egns-lab">
-                    Silverline Law
-                  </Link>
-                </p>
-              </div>
-              <div className="col-lg-6 d-flex justify-content-lg-end justify-content-center align-items-center">
+              <div className="flex justify-between text-lg-start text-center px-1">
+                <a className="text-transparent text-white">
+                  Copyright @ {new Date().getFullYear()}
+                </a>{" "}
                 <ul className="f-bottom-list d-flex jusify-content-start align-items-center">
                   <li>
                     <Link href="#">Privacy Policy</Link>
