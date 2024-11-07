@@ -14,7 +14,7 @@ function GetInTouch() {
         </div>
         <div className="flex items-center gap-1">
           <Image src="/Icons/viber.png" alt="..." width={27} height={27} />
-          <p className="text-white text-lg"> +960-1234567</p>
+          <p className="text-white text-lg ml-[0.35rem]"> +960-1234567</p>
         </div>
       </div>
     </div>
