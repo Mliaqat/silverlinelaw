@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 
@@ -43,6 +44,46 @@ const practiceAreas = [
 ];
 
 function Services() {
+  const dublerowSlide = {
+    slidesToScroll: 2,
+    slidesToShow: 3,
+    // autoplay: 1000,
+    spaceBetween: 30,
+    margin: 30,
+    rows: 1,
+    loop: true,
+    dots: true,
+    roundLengths: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: "true",
+    },
+    navigation: {
+      nextEl: ".service-prev1",
+      prevEl: ".service-next1",
+    },
+    responsive: [
+      {
+        breakpoint: 1300,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 776,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <>
       <div className="practice-area-section2 pb-120 max-w-[1700px] m-auto px-4">
@@ -57,32 +98,44 @@ function Services() {
               </h3>
             </div>
 
-            <div className="grid sm:grid-cols-2 gap-3 xl:grid-cols-4">
-              {practiceAreas.map(({ id, iconSrc, title, description }) => (
-                <div className="practice-single2 rounded shadow-sm" key={id}>
-                  <div className="content p-2">
-                    <div className="relative w-full h-[20rem]">
-                      <Image
-                        src={iconSrc}
-                        alt="image"
-                        fill
-                        style={{ objectFit: "cover" }}
-                        className="rounded-md"
-                      />
-                    </div>
-                    <div className="text mt-3 mb-2">
-                      <h5>
-                        <Link href="/practice-details">{title}</Link>
-                      </h5>
-                      <p>{description}</p>
-                      <Link href="/practice-details" className="details-btn">
-                        Learn More
-                      </Link>
+            <div className="w-[85%] lg:w-[90%] m-auto justify-center relative">
+              <Slider
+                spaceBetween={20}
+                {...dublerowSlide}
+                className="flex justify-center"
+              >
+                {practiceAreas.map(({ id, iconSrc, title, description }) => (
+                  <div key={id}>
+                    <div className="practice-single2 rounded shadow-sm">
+                      <div className="content p-2">
+                        <div className="relative w-full h-[20rem]">
+                          <Image
+                            src={iconSrc}
+                            alt="image"
+                            fill
+                            style={{ objectFit: "cover" }}
+                            className="rounded-md"
+                          />
+                        </div>
+                        <div className="text mt-3 mb-2">
+                          <h5>
+                            <Link href="/practice-details">{title}</Link>
+                          </h5>
+                          <p>{description}</p>
+                          <Link
+                            href="/practice-details"
+                            className="details-btn"
+                          >
+                            Learn More
+                          </Link>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </Slider>
             </div>
+
             <div className="flex justify-end mt-3">
               <Link
                 href="/services"

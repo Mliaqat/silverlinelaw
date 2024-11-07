@@ -77,7 +77,7 @@ function AttorneySection() {
         <div className="pb-20">
           <div className="row justify-content-center">
             <div className="practice-area-section2  max-w-[1700px] m-auto px-4">
-              <div className="row align-items-end m-auto w-[90%] lg:w-full">
+              <div className="row align-items-end m-auto w-[90%]">
                 <div className="col-12 m-auto justify-center relative w-full">
                   <Slider
                     spaceBetween={20}

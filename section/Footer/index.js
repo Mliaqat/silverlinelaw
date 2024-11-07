@@ -13,23 +13,6 @@ function Footer() {
                     <h4>Silverline Law Associates</h4>
                   </Link>
 
-                  <ul className="footer-social gap-4">
-                    <li>
-                      <a href="https://www.facebook.com/">
-                        <i className="bx bxl-facebook" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.twitter.com/">
-                        <i className="bx bxl-twitter" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/">
-                        <i className="bx bxl-instagram" />
-                      </a>
-                    </li>
-                  </ul>
                   {/* <div className="open-hour">
                     <h6>Open Hour</h6>
                     <p>Sunday To Thursday, 9.00 AM - 10.30 PM</p>
@@ -59,12 +42,28 @@ function Footer() {
                       </div>
                     </li>
                   </ul>
+                  <ul className="footer-social gap-4 mt-3">
+                    <li>
+                      <a href="https://www.facebook.com/">
+                        <i className="bx bxl-facebook" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.twitter.com/">
+                        <i className="bx bxl-twitter" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/">
+                        <i className="bx bxl-instagram" />
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
 
               <div className="col-lg-6 col-md-6 d-flex justify-content-lg-center">
                 <div className="footer-item">
-                  <h4>Contact</h4>
                   <ul className="contact-list">
                     <li>
                       <div className="icon">

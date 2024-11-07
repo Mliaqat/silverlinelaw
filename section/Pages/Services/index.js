@@ -57,6 +57,24 @@ const practiceAreas = [
     description:
       "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
   },
+  {
+    id: 7,
+    number: "06",
+    imageSrc: "assets/images/bg/practice24.png",
+    iconSrc: "assets/images/icons/practice-icon21.svg",
+    title: "Landmark Cases",
+    description:
+      "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
+  },
+  {
+    id: 8,
+    number: "06",
+    imageSrc: "assets/images/bg/practice24.png",
+    iconSrc: "assets/images/icons/practice-icon21.svg",
+    title: "Landmark Cases",
+    description:
+      "Legal Advise - providing legal advise on all matters of law, in order to help clients understand their legal rights,",
+  },
 ];
 
 function Services() {
