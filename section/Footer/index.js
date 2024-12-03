@@ -122,24 +122,20 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="container">
-          <div className="footer-bottom">
-            <div className="row d-flex align-items-center g-3">
-              <div className="flex justify-between text-lg-start text-center px-1">
-                <a className="text-transparent text-white">
-                  Copyright @ {new Date().getFullYear()}
-                </a>{" "}
-                <ul className="f-bottom-list d-flex jusify-content-start align-items-center">
-                  <li>
-                    <Link href="#">Privacy Policy</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Terms of Use</Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <div className="container border-t border-white">
+          <p className="text-center text-white mb-4 pt-3">
+            ©2020 All Right Reserved to Silverline Law Associates LLP.
+            Disclaimer
+          </p>
+          <p className="text-center text-white pb-4">
+            The materials appearing on this website are provided for
+            informational use only, and are in no way intended to constitute
+            legal advice or the opinions of this law firm or any of its
+            attorneys. Transmission or receipt of any information from this
+            website does not create an attorney-client relationship, and you
+            should not act or rely upon any information appearing on this
+            website without seeking the advice of an attorney.
+          </p>
         </div>
       </footer>
     </>

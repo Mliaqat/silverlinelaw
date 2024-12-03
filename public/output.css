@@ -4153,7 +4153,6 @@ header.style-5 .main-nav ul li.menu-item-has-children > i {
 
 .banner-section {
   overflow: hidden;
-  height: 90vh;
   position: relative;
   z-index: 1;
   display: flex;

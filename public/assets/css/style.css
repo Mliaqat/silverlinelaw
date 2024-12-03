@@ -1912,11 +1912,7 @@ header.style-2 .main-nav ul li i {
   align-items: center;
 }
 
-@media (max-width: 991px) {
-  .banner-section {
-    height: 82vh;
-  }
-}
+
 
 .banner-section::before {
   content: "";
