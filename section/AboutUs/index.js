@@ -24,7 +24,7 @@ function AboutUs() {
   
           
           <h2 className="text-4xl sm:text-5xl font-bold text-white pt-16 drop-shadow-md text-center">
-            About Silver Line Law
+            About Silverline Law Associates
           </h2>
         </div>
 
@@ -32,7 +32,7 @@ function AboutUs() {
         <div className="max-w-4xl mx-auto text-center">
           {/* Description */}
           <p className="text-lg sm:text-xl text-white leading-relaxed mb-12 drop-shadow-md font-medium">
-            Silver Line is a Law Firm registered in the Republic of Maldives 
+            Silverline Law Associates is a Law Firm registered in the Republic of Maldives 
             by a partnership of licensed and experienced legal professionals. 
             We provide legal services of a wide range, including:
           </p>
