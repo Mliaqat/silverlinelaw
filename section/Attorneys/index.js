@@ -32,24 +32,14 @@ const AttorneysData = [
 ];
 
 function AttorneySection() {
-  const dublerowSlide = {
-    slidesToScroll: 2,
+  const sliderSettings = {
     slidesToShow: 4,
-    // autoplay: 1000,
-    spaceBetween: 30,
-    margin: 30,
-    rows: 1,
-    loop: true,
+    slidesToScroll: 1,
     dots: true,
-    roundLengths: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: "true",
-    },
-    navigation: {
-      nextEl: ".service-prev1",
-      prevEl: ".service-next1",
-    },
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1300,
@@ -71,47 +61,60 @@ function AttorneySection() {
       },
     ],
   };
+
   return (
-    <>
-      <div className="attorneys-section  relative">
-        <div className="pb-20">
-          <div className="row justify-content-center">
-            <div className="practice-area-section2  max-w-[1700px] m-auto px-4">
-              <div className="row align-items-end m-auto w-[90%]">
-                <div className="col-12 m-auto justify-center relative w-full">
-                  <Slider
-                    spaceBetween={20}
-                    {...dublerowSlide}
-                    className="flex justify-center"
-                  >
-                    {AttorneysData.map((item, index) => (
-                      <div key={index}>
-                        <div
-                          className="attorney-single flex justify-center relative w-full"
-                          style={{ display: "flex" }}
-                        >
-                          <img
-                            src={item.images}
-                            className="casestudy1"
-                            alt="image"
-                          />
-                          <div className="content absolute bottom-10 left-0">
-                            <h4>
-                              <Link href="/lawyer-details">{item.name}</Link>
-                            </h4>
-                            <p>{item.designation}</p>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </Slider>
+    <section className="bg-gray-50 py-16">
+      <div className="max-w-[1700px] mx-auto px-4">
+        {/* Section Header */}
+        <div className="text-center mb-12">
+          <h2 className="text-[#1f3864] text-3xl font-bold mb-4">OUR LEGAL TEAM</h2>
+          <div className="w-24 h-1 bg-[#1f3864] mx-auto"/>
+        </div>
+
+        {/* Team Slider */}
+        <div className="w-[90%] mx-auto">
+          <Slider {...sliderSettings}>
+            {AttorneysData.map((attorney, index) => (
+              <div key={index} className="px-3">
+                <div className="relative group overflow-hidden rounded-lg">
+                  {/* Image Container */}
+                  <div className="aspect-[3/4] overflow-hidden">
+                    <img
+                      src={attorney.images}
+                      alt={attorney.name}
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                  </div>
+                  
+                  {/* Content Overlay */}
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#1f3864] p-6 transform translate-y-0 transition-all duration-300">
+                    <Link 
+                      href="/lawyer-details"
+                      className="block text-white text-xl font-semibold mb-2 hover:text-gray-200 transition-colors"
+                    >
+                      {attorney.name}
+                    </Link>
+                    <p className="text-gray-200 text-sm">{attorney.designation}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
+            ))}
+          </Slider>
         </div>
       </div>
-    </>
+
+      <style jsx>{`
+        :global(.slick-dots) {
+          bottom: -40px;
+        }
+        :global(.slick-dots li button:before) {
+          color: #1f3864;
+        }
+        :global(.slick-dots li.slick-active button:before) {
+          color: #1f3864;
+        }
+      `}</style>
+    </section>
   );
 }
 

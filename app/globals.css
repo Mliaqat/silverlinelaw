@@ -169,3 +169,24 @@ a {
     color-scheme: dark;
   }
 }
+
+
+@keyframes chalkDust {
+  0% { opacity: 0.1; transform: translateY(0); }
+  50% { opacity: 0.2; }
+  100% { opacity: 0; transform: translateY(10px); }
+}
+
+.chalk-dust::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  animation: chalkDust 2s ease-in-out infinite;
+}
+
+
+

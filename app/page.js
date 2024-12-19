@@ -5,17 +5,19 @@ import HeroSection from "@/section/HeroSection";
 import GetInTouch from "@/section/OnelineContact";
 import Practice from "@/section/Practice";
 import Records from "@/section/Records";
-import Services from "@/section/Services";
+//import Services from "@/section/Services";
+import BlackboardNavigation from "@/section/BlackboardNevigation";
+import ContactSection from "@/section/ContactSection";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
-      <div className="mt-3 hidden">{/* <Records /> */}</div>
-
+      {/* <ContactSection /> */}
       <AboutUs />
       <Believe />
-      <Services />
+    
+      <BlackboardNavigation />
       {/* <Practice /> */}
       <AttorneySection />
     </>

@@ -1,2 +1,22 @@
-
-
+// section/Believe/Believe.scss
+.believe-section {
+    position: relative;
+    
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(31, 56, 100, 0.1), transparent);
+    }
+    
+    &::before {
+      top: 0;
+    }
+    
+    &::after {
+      bottom: 0;
+    }
+  }

@@ -1,37 +1,40 @@
-import "./Believe.scss";
+// section/Believe/index.js
+"use client";
+import React from 'react';
 
-function Believe() {
+const beliefs = [
+  "Rule of Law",
+  "Justice",
+  "Affordable Legal Service",
+  "Commitment and Diligence",
+  "Compassion and Respect"
+];
+
+const Believe = () => {
   return (
-    <div className="practice-area-section pb-120 max-w-[1700px] m-auto px-4">
-      <div className="row justify-content-center">
-        <div className="section-title1 text-center mt-4 lg:mt-0">
-          <h2>WE BELIEVE IN</h2>
-        </div>
-        <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-3">
-          {[
-            "Rule of Law",
-            "Justice",
-            "Affordable Legal Service ",
-            "Commitment and Diligence",
-          ].map((data, index) => (
-            <div
-              className={`believeCard relative wow ${
-                index > 1 ? "fadeInRight" : "fadeInLeft"
-              }`}
-              key={index}
-            >
-              {/* <span className="sl-number">0{index + 1}</span> */}
-              <div className="content">
-                <div className="text">
-                  <p className="font-bold text-xl text-center">{data}</p>
-                </div>
-              </div>
-            </div>
-          ))}
+    <section className="py-8">
+      <div className="max-w-[1700px] mx-auto px-4">
+        <div className="text-center">
+          {/* Simple heading */}
+          <h2 className="text-[#1f3864] text-2xl font-bold mb-4">
+            WE BELIEVE IN
+          </h2>
+          
+          {/* Beliefs content with minimal spacing */}
+          <div className="flex flex-col items-center space-y-2">
+            {beliefs.map((belief, index) => (
+              <p 
+                key={index} 
+                className="text-[#1f3864] text-lg font-medium hover:text-[#2a4d8a] transition-colors duration-200"
+              >
+                {belief}
+              </p>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
-}
+};
 
 export default Believe;
