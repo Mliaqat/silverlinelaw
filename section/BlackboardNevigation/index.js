@@ -1,4 +1,3 @@
-// section/BlackboardNavigation/index.js
 "use client";
 import React from 'react';
 import Link from 'next/link';
@@ -39,8 +38,8 @@ const BlackboardNavigation = () => {
           {/* Main Links Section */}
           <div className="mb-12 relative">
             <h2 className="text-3xl text-center mb-10 tracking-wider" style={{
-              color: 'rgba(255, 255, 255, 0.9)',
-              textShadow: '2px 2px 3px rgba(255,255,255,0.1)',
+              color: '#3B82F6', // Changed to blue
+              textShadow: '2px 2px 3px rgba(59,130,246,0.1)', // Updated shadow to match blue
               fontFamily: 'serif'
             }}>
               EVENTS AND CALENDER
@@ -53,11 +52,11 @@ const BlackboardNavigation = () => {
                     className="relative inline-block group"
                   >
                     <span className="text-lg relative" style={{
-                      color: 'rgba(255, 255, 255, 0.85)',
-                      textShadow: '1px 1px 2px rgba(255,255,255,0.15)'
+                      color: '#3B82F6', // Changed to blue
+                      textShadow: '1px 1px 2px rgba(59,130,246,0.15)' // Updated shadow to match blue
                     }}>
                       {link.title}
-                      <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white/40 transition-all duration-300 group-hover:w-full" />
+                      <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full" />
                     </span>
                   </Link>
                 </div>
@@ -67,11 +66,11 @@ const BlackboardNavigation = () => {
 
           {/* Useful Links Section */}
           <div className="relative pt-8" style={{
-            borderTop: '2px solid rgba(255, 255, 255, 0.1)'
+            borderTop: '2px solid rgba(59, 130, 246, 0.1)' // Updated border color to match blue
           }}>
             <h2 className="text-3xl text-center mb-10 tracking-wider" style={{
-              color: 'rgba(255, 255, 255, 0.9)',
-              textShadow: '2px 2px 3px rgba(255,255,255,0.1)',
+              color: '#3B82F6', // Changed to blue
+              textShadow: '2px 2px 3px rgba(59,130,246,0.1)', // Updated shadow to match blue
               fontFamily: 'serif'
             }}>
               USEFUL LINKS
@@ -84,11 +83,11 @@ const BlackboardNavigation = () => {
                   className="relative inline-block group"
                 >
                   <span className="relative" style={{
-                    color: 'rgba(255, 255, 255, 0.85)',
-                    textShadow: '1px 1px 2px rgba(255,255,255,0.15)'
+                    color: '#3B82F6', // Changed to blue
+                    textShadow: '1px 1px 2px rgba(59,130,246,0.15)' // Updated shadow to match blue
                   }}>
                     {link.title}
-                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white/40 transition-all duration-300 group-hover:w-full" />
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full" />
                   </span>
                 </Link>
               ))}
