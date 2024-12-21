@@ -29,6 +29,12 @@ const AttorneysData = [
     name: "Uza. Aishath Naazly",
     designation: "Associate",
   },
+  {
+    id: 5,
+    images: "assets/uz.azlif.png",
+    name: "Uz. Azlif Latheef",
+    designation: "Associate",
+  },
 ];
 
 function AttorneySection() {
