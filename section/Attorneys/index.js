@@ -94,12 +94,12 @@ function AttorneySection() {
                   
                   {/* Content Overlay */}
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#1f3864] p-6 transform translate-y-0 transition-all duration-300">
-                    <Link 
+                    {/* <Link 
                       href="/lawyer-details"
                       className="block text-white text-xl font-semibold mb-2 hover:text-gray-200 transition-colors"
-                    >
+                    > */}
                       {attorney.name}
-                    </Link>
+                    {/* </Link> */}
                     <p className="text-gray-200 text-sm">{attorney.designation}</p>
                   </div>
                 </div>
