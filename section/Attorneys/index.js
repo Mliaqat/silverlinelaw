@@ -25,9 +25,9 @@ const AttorneysData = [
   },
   {
     id: 4,
-    images: "assets/Uz.png",
-    name: "Uz. Ahmed Maajid",
-    designation: "Senior Lawyer",
+    images: "assets/uza.naaz.png",
+    name: "Uza. Aishath Naazly",
+    designation: "Associate",
   },
 ];
 
