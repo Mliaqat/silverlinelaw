@@ -11,7 +11,7 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "framer-motion": "^11.15.0",
-    "next": "14.2.7",
+    "next": "^14.2.21",
     "nodemailer": "^6.9.14",
     "react": "^18",
     "react-circular-progressbar": "^2.1.0",
