@@ -35,8 +35,7 @@ function Footer() {
                 <img src="/assets/icons/location.svg" alt="location" className="w-4 h-4" />
                 <span className="text-sm">Location</span>
               </div>
-              <span className="text-sm">Ma. Maaraa, 1st Flr, Gulaabee Magu, Male City, (20000),
-              Republic of Maldives.</span>
+              <span className="text-sm">Ma. Maaraa, 1st Flr, Gulaabee Magu, Male City,Maldives.</span>
             </div>
           </div>
         </div>
