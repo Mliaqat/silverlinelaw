@@ -31,9 +31,9 @@ const AttorneysData = [
   },
   {
     id: 5,
-    images: "assets/uz.azlif.png",
-    name: "Uz. Azlif Latheef",
-    designation: "Associate",
+    images: "assets/mr.mustho.jpg",
+    name: "Mr. Abdulla Musthafa",
+    designation: "Partner",
   },
 ];
 
