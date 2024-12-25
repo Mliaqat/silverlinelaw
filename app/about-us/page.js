@@ -1,5 +1,5 @@
 import AboutUs from "@/section/AboutUs";
-import AboutUsPage from "@/section/Pages/AboutPage/Index";
+import AboutUsPage from "@/section/AboutUs";
 
 import React from "react";
 

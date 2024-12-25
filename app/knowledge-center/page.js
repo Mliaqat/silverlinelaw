@@ -1,4 +1,4 @@
-import KnowledgeCenter from "@/section/Pages/KnowledgeCenter";
+import KnowledgeCenter from "@/section/KnowledgeCenter";
 import React from "react";
 
 function page() {

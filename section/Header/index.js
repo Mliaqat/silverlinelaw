@@ -83,7 +83,7 @@ function Header() {
                   { name: 'Our Services', path: '/services' },
                   { name: 'Knowledge Center', path: '/knowledge-center' },
                   { name: 'Contact Us', path: '/contact-us' },
-                  { name: 'Join our Team', path: '/join-team' },
+                  { name: 'Join our Team', path: '/join-us' },
                 ].map((item) => (
                   <li key={item.path}>
                     <Link
@@ -125,7 +125,7 @@ function Header() {
                 { name: 'Our Services', path: '/services' },
                 { name: 'Knowledge Center', path: '/knowledge-center' },
                 { name: 'Contact Us', path: '/contact-us' },
-                { name: 'Join our Team', path: '/join-team' },
+                { name: 'Join our Team', path: '/join-us' },
               ].map((item) => (
                 <li key={item.path}>
                   <Link

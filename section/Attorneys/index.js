@@ -29,12 +29,6 @@ const AttorneysData = [
     name: "Uza. Aishath Naazly",
     designation: "Associate",
   },
-  // {
-  //   id: 5,
-  //   images: "assets/mr.mustho.jpg",
-  //   name: "Mr. Abdulla Musthafa",
-  //   designation: "Partner",
-  // },
 ];
 
 function AttorneySection() {
@@ -43,8 +37,8 @@ function AttorneySection() {
     slidesToScroll: 1,
     dots: false,
     infinite: true,
-    autoplay: true,
-    autoplaySpeed: 4000,
+    autoplay: false,
+    speed: 500,
     pauseOnHover: true,
     responsive: [
       {
@@ -69,39 +63,43 @@ function AttorneySection() {
   };
 
   return (
-    <section className="bg-white py-20">
-      <div className="max-w-[1700px] mx-auto px-4">
+    <section className="bg-white py-24 border-t border-gray-100">
+      <div className="max-w-[1700px] mx-auto px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-[#1f3864] text-3xl font-bold mb-3">Our Legal Team</h2>
-          <div className="w-20 h-0.5 bg-[#1f3864] mx-auto"/>
+          <h2 className="text-[#1f3864] text-2xl font-bold mb-6">Legal Team</h2>
+          <div className="w-16 h-px bg-[#1f3864] mx-auto"/>
         </div>
 
         {/* Team Slider */}
-        <div className="w-[90%] mx-auto">
+        <div className="w-[92%] mx-auto">
           <Slider {...sliderSettings}>
             {AttorneysData.map((attorney, index) => (
-              <div key={index} className="px-3">
-                <div className="bg-white">
-                  {/* Image Container */}
-                  <div className="relative aspect-[4/5] overflow-hidden">
+              <div key={index} className="px-4">
+                <div className="relative group rounded-xl overflow-hidden shadow-sm">
+                  {/* Image Container with Gradient Overlay */}
+                  <div className="relative aspect-[3/4] overflow-hidden bg-gray-50 rounded-xl">
                     <Image
                       src={attorney.images}
                       alt={attorney.name}
                       fill
                       sizes="(max-width: 576px) 100vw, (max-width: 776px) 50vw, (max-width: 1300px) 33vw, 25vw"
                       priority={index < 4}
-                      className="object-cover object-top"
-                      style={{ backgroundColor: '#f8f9fa' }}
+                      className="object-cover object-center rounded-xl"
                     />
+                    {/* Base Overlay - Always visible */}
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#1f3864]/30 to-[#1f3864]/95 rounded-xl" />
+                    
+                    {/* Hover Overlay */}
+                    <div className="absolute inset-0 bg-[#1f3864]/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl" />
                   </div>
                   
-                  {/* Content */}
-                  <div className="text-center py-4">
-                    <h3 className="text-[#1f3864] text-lg font-semibold mb-1">
+                  {/* Content Overlay - Always visible */}
+                  <div className="absolute bottom-0 left-0 right-0 p-5 text-white bg-gradient-to-t from-[#1f3864]/90 to-transparent">
+                    <h3 className="text-base font-semibold mb-0.5 drop-shadow-md">
                       {attorney.name}
                     </h3>
-                    <p className="text-gray-600 text-sm">
+                    <p className="text-xs tracking-wide text-white font-medium opacity-90">
                       {attorney.designation}
                     </p>
                   </div>
@@ -113,27 +111,37 @@ function AttorneySection() {
       </div>
 
       <style jsx>{`
+        :global(.slick-track) {
+          display: flex !important;
+        }
+        :global(.slick-slide) {
+          height: inherit !important;
+          padding-bottom: 1rem;
+        }
+        :global(.slick-slide > div) {
+          height: 100%;
+        }
         :global(.slick-prev),
         :global(.slick-next) {
-          width: 40px;
-          height: 40px;
+          width: 32px;
+          height: 32px;
           z-index: 10;
         }
         :global(.slick-prev:before),
         :global(.slick-next:before) {
           color: #1f3864;
-          font-size: 40px;
-          opacity: 0.75;
+          font-size: 32px;
+          opacity: 0.5;
         }
         :global(.slick-prev:hover:before),
         :global(.slick-next:hover:before) {
-          opacity: 1;
+          opacity: 0.75;
         }
         :global(.slick-prev) {
-          left: -50px;
+          left: -45px;
         }
         :global(.slick-next) {
-          right: -50px;
+          right: -45px;
         }
       `}</style>
     </section>

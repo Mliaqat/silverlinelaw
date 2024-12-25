@@ -1,4 +1,4 @@
-import Services from '@/section/Pages/Services'
+import Services from '@/section/Services'
 import React from 'react'
 
 function page() {

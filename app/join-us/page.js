@@ -1,4 +1,4 @@
-import ContactUs from "@/section/Contact";
+import JoinUs from "@/section/JoinUs";
 import React from "react";
 
 export const metadata = {
@@ -8,7 +8,7 @@ export const metadata = {
 };
 
 function page() {
-  return <ContactUs />;
+  return <JoinUs />;
 }
 
 export default page;
