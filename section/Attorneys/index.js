@@ -25,8 +25,8 @@ const AttorneysData = [
   },
   {
     id: 4,
-    images: "/assets/uza.naaz.png",
-    name: "Uza. Aishath Naazly",
+    images: "/assets/uza.naaz.jpeg",
+    name: "Uza. Aminath Naazly",
     designation: "Associate",
   },
 ];
@@ -68,7 +68,7 @@ function AttorneySection() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-[#1f3864] text-2xl font-bold mb-6">Legal Team</h2>
-          <div className="w-16 h-px bg-[#1f3864] mx-auto"/>
+          <div className="w-16 h-px bg-[#1f3864] mx-auto" />
         </div>
 
         {/* Team Slider */}
@@ -89,11 +89,11 @@ function AttorneySection() {
                     />
                     {/* Base Overlay - Always visible */}
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#1f3864]/30 to-[#1f3864]/95 rounded-xl" />
-                    
+
                     {/* Hover Overlay */}
                     <div className="absolute inset-0 bg-[#1f3864]/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl" />
                   </div>
-                  
+
                   {/* Content Overlay - Always visible */}
                   <div className="absolute bottom-0 left-0 right-0 p-5 text-white bg-gradient-to-t from-[#1f3864]/90 to-transparent">
                     <h3 className="text-base font-semibold mb-0.5 drop-shadow-md">
