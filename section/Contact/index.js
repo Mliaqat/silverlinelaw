@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Alert, AlertDescription } from '@/components/ui/alert';
-import { MapPin, Phone, Mail } from 'lucide-react';
+import React, { useState } from "react";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import { MapPin, Phone, Mail } from "lucide-react";
 
 export default function Contact() {
   const [loading, setLoading] = useState(false);
@@ -15,7 +15,7 @@ export default function Contact() {
 
     try {
       // Simulate form submission
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      await new Promise((resolve) => setTimeout(resolve, 1000));
       setSuccess(true);
       e.target.reset();
     } catch (err) {
@@ -29,7 +29,9 @@ export default function Contact() {
     <div className="w-full max-w-7xl mx-auto px-4 py-16">
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
-        <p className="text-lg text-gray-600">Let us know your concerns. We're here to help.</p>
+        <p className="text-lg text-gray-600">
+          Let us know your concerns. We're here to help.
+        </p>
       </div>
 
       <div className="grid md:grid-cols-2 gap-12">
@@ -37,7 +39,10 @@ export default function Contact() {
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium mb-2"
+                >
                   Name
                 </label>
                 <input
@@ -49,7 +54,10 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium mb-2"
+                >
                   Email
                 </label>
                 <input
@@ -63,7 +71,10 @@ export default function Contact() {
             </div>
 
             <div>
-              <label htmlFor="subject" className="block text-sm font-medium mb-2">
+              <label
+                htmlFor="subject"
+                className="block text-sm font-medium mb-2"
+              >
                 Subject
               </label>
               <input
@@ -76,7 +87,10 @@ export default function Contact() {
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-sm font-medium mb-2">
+              <label
+                htmlFor="message"
+                className="block text-sm font-medium mb-2"
+              >
                 Message
               </label>
               <textarea
@@ -93,7 +107,7 @@ export default function Contact() {
               disabled={loading}
               className="w-full md:w-auto px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50"
             >
-              {loading ? 'Sending...' : 'Send Message'}
+              {loading ? "Sending..." : "Send Message"}
             </button>
           </form>
 
@@ -123,7 +137,8 @@ export default function Contact() {
                 <div>
                   <h3 className="font-medium">Location</h3>
                   <p className="text-gray-600 mt-1">
-                    Ma. Maaraa, 1st Flr, Gulaabee Magu, Male', (20000), Republic of Maldives
+                    Ma. Maaraa, 1st Flr, Gulaabee Magu, Male', (20000), Republic
+                    of Maldives
                   </p>
                 </div>
               </div>
@@ -132,8 +147,8 @@ export default function Contact() {
                 <Phone className="w-6 h-6 text-blue-600 mt-1" />
                 <div>
                   <h3 className="font-medium">Phone</h3>
-                  <a 
-                    href="tel:+9603005653" 
+                  <a
+                    href="tel:+9603005653"
                     className="text-gray-600 hover:text-blue-600 transition-colors"
                   >
                     +960 3005653
@@ -145,11 +160,11 @@ export default function Contact() {
                 <Mail className="w-6 h-6 text-blue-600 mt-1" />
                 <div>
                   <h3 className="font-medium">Email Support</h3>
-                  <a 
+                  <a
                     href="mailto:support@example.com"
                     className="text-gray-600 hover:text-blue-600 transition-colors"
                   >
-                    support@example.com
+                    info@silverlinelaw.com.mv
                   </a>
                 </div>
               </div>
